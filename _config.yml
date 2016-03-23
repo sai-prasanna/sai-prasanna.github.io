@@ -7,6 +7,7 @@ gems:
 title: "Sai Prasanna"
 description: > # this means to ignore newlines until "email:"
    On Programming, Philosophy and Playing Guitar.
+timezone: Asia/Calcutta
 #email: a-mail@mail.mail
 #blog logo
 logo: "/assets/images/logo.png"
