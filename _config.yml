@@ -19,6 +19,8 @@ author: 'Sai Prasanna'
 author_image: "/assets/images/author.jpg"
 permalink: pretty
 paginate:	10
+paginate_path: "page:num"
+exclude: ["README.md"] # files to exclude
 
 url: "http://sai-prasanna.github.io" # the base hostname & protocol for your site
 baseurl: ""
