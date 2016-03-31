@@ -4,19 +4,20 @@ gems:
   - jekyll-paginate
 
 # Site settings
-title: "Sai Prasanna"
+title: "< Sai Prasanna />"
 description: > # this means to ignore newlines until "email:"
-   On Programming, Philosophy and Playing Guitar.
-timezone: Asia/Calcutta
+   A Software Engineer trying to find his fixed point function.
 #email: a-mail@mail.mail
-#blog logo
-logo: "/assets/images/logo.png"
+#blog center display logo
+logo: "/assets/images/author.jpg"
 # blog cover
 cover: "/assets/images/background_image.jpg"
 
-name: 'Sai Prasanna'
-author: 'Sai Prasanna'
+name: "Sai Prasanna"
+author: "Sai Prasanna"
 author_image: "/assets/images/author.jpg"
+author_url: "/about/" #author about page
+author_bio: "A software engineer diving into depths of Computer Sci."
 permalink: pretty
 paginate:	10
 paginate_path: "page:num"
@@ -24,6 +25,8 @@ exclude: ["README.md"] # files to exclude
 
 url: "http://sai-prasanna.github.io" # the base hostname & protocol for your site
 baseurl: ""
+timezone: Asia/Calcutta
+
 #used to display twitter cards
 #twitter_handle: '@'
 
@@ -32,13 +35,10 @@ baseurl: ""
 
 # social icons and sharing options
 social:
-
-#  - icon:	facebook
-#    url:	https://facebook.com/???
-#    desc: Connect with me facebook
-#    share_url: https://www.facebook.com/sharer.php
-#    share_title: ?t=
-#    share_link: "&amp;u="
+  - icon: facebook
+    share_url: https://www.facebook.com/sharer.php
+    share_title: ?t=
+    share_link: "&amp;u="
 
   - icon:	github
     url:	https://github.com/sai-prasanna

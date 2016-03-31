@@ -40,23 +40,18 @@ body
   font-feature-settings: "liga", "dlig"
 
 .logo-readium
-  position: fixed
-  left: 10px
+  position: absolute
+  left: 20px
   top: 10px
   width: $rs*3
   height: $rs*3
-  background-color: #000
   overflow: hidden
   z-index: 99
-  .logo
-    display: block
-    position: absolute
-    top: $rs/2
-    left: $rs/2
-    width: $rs*2
-    height: $rs*2
-    background-size: cover
-    background-repeat: no-repeat
+  display: inline-block
+  border-radius: 60px
+  box-shadow: 0px 0px 2px #888
+  text-align: center
+  font-size: 30px
 
 .teaserimage
   height: 450px
@@ -556,7 +551,7 @@ body
     padding: 120px 0 90px
     text-align: center
     margin: 0 auto
-    .blog-title
+    .bottom-title
       margin: 0
       padding: 0 0 10px
       font-size: 50px
@@ -568,7 +563,9 @@ body
       word-break: break-word
       color: #fff
       text-shadow: 0px 1px 16px rgba(0,0,0,0.5), 0px 0px 1px rgba(0,0,0,0.5)
-    .blog-description
+    .bottom-quote
+      font-style: italic
+    .bottom-description
       margin: 0 0 50px
       padding: 0 $rs*2
       font-size: $rs/8*9
