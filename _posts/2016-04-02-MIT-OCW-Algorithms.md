@@ -4,9 +4,11 @@ title:  MIT OCW 6.006 Algorithms Course
 date:   2016-04-02
 categories: compsci
 tags:  algorithms, computer science
-image: http://www.net-texts.com/sites/default/files/pressreleases/provider-logos/MIT-OCW.jpg
 ---
-I have been refreshing and expanding my knowledge of algorithms. I found that MIT OCW course goes to greater lengths in  introducing someone to algorithms, and also giving them the tools to analyse, and understand how algorithms work.
+I am refreshing and expanding my knowledge of algorithms.
+I found that MIT OCW course is one among the best courses that
+introduce us to algorithms,and  us the techniques  to analyse, and
+understand how algorithms work.
 
 [MIT OCW 6.006 Introduction to Algorithms Fall 2011](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/) 
 course is packed with awesome content. The open course ware website contains  video recording of the MIT course conducted at MIT and all the accompanying
