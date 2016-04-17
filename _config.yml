@@ -4,9 +4,9 @@ gems:
   - jekyll-paginate
 
 # Site settings
-title: "< Sai Prasanna />"
+title: "Sai Prasanna"
 description: > # this means to ignore newlines until "email:"
-   A Software Engineer trying to find his fixed point function.
+   My journey in the world of Computers, Philosophy, Guitars ..
 #email: a-mail@mail.mail
 #blog center display logo
 logo: "/assets/images/author.jpg"
@@ -17,13 +17,13 @@ name: "Sai Prasanna"
 author: "Sai Prasanna"
 author_image: "/assets/images/author.jpg"
 author_url: "/about/" #author about page
-author_bio: "A software engineer diving into depths of Computer Sci."
-permalink: pretty
+author_bio: "Engineer in constant process of learning new things.."
+permalink: /:categories/:title/
 paginate:	10
 paginate_path: "page:num"
 exclude: ["README.md"] # files to exclude
 
-url: "http://sai-prasanna.github.io" # the base hostname & protocol for your site
+url: "http://saiprasanna.in" # the base hostname & protocol for your site
 baseurl: ""
 timezone: Asia/Calcutta
 
@@ -31,7 +31,7 @@ timezone: Asia/Calcutta
 #twitter_handle: '@'
 
 #fill in disqus shortname to use disqus
-#disqus: disqus-shortname
+disqus: saiprasanna
 
 # social icons and sharing options
 social:

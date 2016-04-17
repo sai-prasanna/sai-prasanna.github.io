@@ -2,8 +2,8 @@
 layout: post
 title:  MIT OCW 6.006 Algorithms Course
 date:   2016-04-02
-categories: compsci
-tags:  algorithms, computer science
+categories: computer-science
+tags:  algorithms
 ---
 I am refreshing and expanding my knowledge of algorithms.
 I found that MIT OCW course is one among the best courses that
@@ -24,5 +24,6 @@ The assignments are one of the fun parts of the whole course. They allow you to 
 So on the whole if you are self taught programmer, or even a computer science student like me wishing to expand and refresh you old under grad material, check this out.
 
 The course videos are also available in youtube as playlist. Checkout the first video.
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/HtSuA80QTyo?list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb" frameborder="0" allowfullscreen></iframe>
 
