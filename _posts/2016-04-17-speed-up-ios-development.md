@@ -45,4 +45,3 @@ This plugin will add a new folder to your project which you can add to .gitignor
 
 It is great that the developer has open sourced it. To know how it does its magic see [here](https://github.com/johnno1962/injectionforxcode#how-it-works)
 The author has released it under "nagware" license, where he requests you to pay after using it for two weeks.
-
