@@ -1,24 +1,26 @@
 ---
 layout: post
 title:  Speed up iOS dev using XCode Injection Plugin
-date:   2016-04-23 23:55:00
+date:   2016-04-17 23:55:00
 categories: ios
 tags:  mobile ios-development
 ---
 
-The most boring part of any development is waiting for your project to compile.
-And if you have done iOS development, you know how much time is wasted for XCode to recompile
-the project. And even if compile time is less, you have to follow a bunch of taps, long presses 
-etc to get to the desired app state before even testing your changes.
+Rejoyce , for now you can refresh your iOS views as if they are web pages !.
 
-If you have tried react native you would have gone green with envy for the developers using it,
-because of auto refreshing (hot reloading) of code as it is saved in the editor. Now you can enjoy hot reloading and 
-refreshing in ordinary swift/obj c code using [Injection for XCode](http://injectionforxcode.com/).
+[Injection for XCode](http://injectionforxcode.com/).
 
 <iframe src="https://player.vimeo.com/video/50137444" width="640" height="366" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
+The most boring part of any development is waiting for your project to compile.
+And if you have done iOS development, you know how much time is wasted for XCode to recompile
+the project. And even if compile time is less, you have to follow a bunch of taps, long presses 
+etc to get to the desired app state before even testing your changes. This plugin will reduces
+reduce these steps considerably.
+
 As you change your code , you can inject the new class definition using this XCode plugin. 
 It recompiles just changed file, and injects it into the live running app.
+
 The great thing is it works for real device as well as  Simulator.
 
 ###Set up
