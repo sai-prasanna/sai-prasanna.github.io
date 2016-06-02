@@ -15,7 +15,7 @@ One of the most boring/unproductive part of any development cycle is waiting for
 As you change your code , you can inject the new class definition using this XCode plugin. It recompiles just changed file, and injects it into the live running app.
 The great thing is it works for real device as well.
 
-##Set up
+### Set up
 
 
   1. Install [Alcatraz](http://alcatraz.io/) package manager for XCode . Alcatraz allows you to install and remove XCode plugins hazzle free
@@ -24,7 +24,7 @@ The great thing is it works for real device as well.
   4. To make it work in real device you need to click on *Product -> Injection Plugin -> Patch Project* for Injection. It will add couple of lines to 
      your main.m of your project. If it is a swift project just create a empty main.m and do the above.
 
-##Inject Code
+### Inject Code
 
 
   1. Run your project, make some changes to the code in a file, press ^ + = . 
