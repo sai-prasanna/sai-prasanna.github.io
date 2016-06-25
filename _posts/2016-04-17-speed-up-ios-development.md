@@ -6,20 +6,13 @@ categories: iOS
 tags: [iOS]
 ---
 
-
 [Injection for XCode](http://injectionforxcode.com/).
 
 <img src="https://camo.githubusercontent.com/95389a5ccf548360add8cf7270c84030cc874971/687474703a2f2f672e7265636f726469742e636f2f69366b5166544d4570672e676966" width="640">
 
-The most boring part of any development is waiting for your project to compile.
-And if you have done iOS development, you know how much time is wasted for XCode to recompile
-the project. And even if compile time is less, you have to follow a bunch of taps, long presses 
-etc to get to the desired app state before even testing your changes. This plugin will reduces
-reduce these steps considerably.
-
-As you change your code , you can inject the new class definition using this XCode plugin. 
-It recompiles just changed file, and injects it into the live running app.
-The great thing is it works for real device as well as  Simulator.
+One of the most boring/unproductive part of any development cycle is waiting for your project to compile. And if you have done iOS development, you know how much time is wasted for XCode to recompile the project. And even if compile time is less, you have to follow a bunch of taps, long presses etc to get to the desired app state before even testing your changes. This plugin will reduces reduce these steps considerably.
+As you change your code , you can inject the new class definition using this XCode plugin. It recompiles just changed file, and injects it into the live running app.
+The great thing is it works for real device as well.
 
 ### Set up
 
