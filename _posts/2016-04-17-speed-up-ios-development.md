@@ -2,15 +2,14 @@
 layout: post
 title:  Speed up iOS dev using XCode Injection Plugin
 date:   2016-04-17 23:55:00
-categories: ios
-tags:  mobile ios-development
+categories: iOS
+tags: [iOS]
 ---
 
-Rejoyce , for now you can refresh your iOS views as if they are web pages !.
 
 [Injection for XCode](http://injectionforxcode.com/).
 
-<iframe src="https://player.vimeo.com/video/50137444" width="640" height="366" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<img src="https://camo.githubusercontent.com/95389a5ccf548360add8cf7270c84030cc874971/687474703a2f2f672e7265636f726469742e636f2f69366b5166544d4570672e676966" width="640">
 
 The most boring part of any development is waiting for your project to compile.
 And if you have done iOS development, you know how much time is wasted for XCode to recompile
@@ -20,11 +19,9 @@ reduce these steps considerably.
 
 As you change your code , you can inject the new class definition using this XCode plugin. 
 It recompiles just changed file, and injects it into the live running app.
-
 The great thing is it works for real device as well as  Simulator.
 
-###Set up
-
+### Set up
 
   1. Install [Alcatraz](http://alcatraz.io/) package manager for XCode . Alcatraz allows you to install and remove XCode plugins hazzle free
   2. Open using Alcatraz with  package manager option in projects menu. 
@@ -32,7 +29,7 @@ The great thing is it works for real device as well as  Simulator.
   4. To make it work in real device you need to click on *Product -> Injection Plugin -> Patch Project* for Injection. It will add couple of lines to 
      your main.m of your project. If it is a swift project just create a empty main.m and do the above.
 
-###Inject Code
+### Inject Code
 
 
   1. Run your project, make some changes to the code in a file, press ^ + = . 

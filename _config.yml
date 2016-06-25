@@ -1,55 +1,45 @@
-# Build settings
-gems:
-  - jemoji
-  - jekyll-paginate
+# Permalinks
+permalink:        /:categories/:title/
 
-# Site settings
-title: "Sai Prasanna"
-description: > # this means to ignore newlines until "email:"
-   My journey in the world of Computers, Philosophy, Guitars ..
-#email: a-mail@mail.mail
-#blog center display logo
-logo: "/assets/images/author.jpg"
-# blog cover
-cover: "/assets/images/background_image.jpg"
+# Setup
+url:              http://saiprasanna.in
 
-name: "Sai Prasanna"
-author: "Sai Prasanna"
-author_image: "/assets/images/author.jpg"
-author_url: "/about/" #author about page
-author_bio: "Engineer in constant process of learning new things.."
-permalink: /:categories/:title/
-paginate:	10
-paginate_path: "page:num"
-exclude: ["README.md"] # files to exclude
+# Set to '' in case of hosting on `http://<your-github-name>.github.io`
+baseurl:          ''
 
-url: "http://saiprasanna.in" # the base hostname & protocol for your site
-baseurl: ""
-timezone: Asia/Calcutta
+title:            Code sAI
 
-#used to display twitter cards
-#twitter_handle: '@'
+# Markdown enabled, however don't use more than one paragraph (enforced by `>`)
+description:      >
+  Engineer by day, Hacker by night, Guitarist in between and Philosopher forever.
 
-#fill in disqus shortname to use disqus
-disqus: saiprasanna
+# The tags listed as entries in the sidebar
+sidebar_tags:     []
 
-# social icons and sharing options
-social:
-  - icon: facebook
-    share_url: https://www.facebook.com/sharer.php
-    share_title: ?t=
-    share_link: "&amp;u="
+# Fallback image and color if not overwritten for tag or post
+image:            /public/img/cover.png
+color:            '#A85641'
 
-  - icon:	github
-    url:	https://github.com/sai-prasanna
-    desc:	Fork me on github
-    share_url:
-    share_title:
-    share_link:
+author:
+  name:           'Sai Prasanna'
 
-#  - icon:	google-plus
-#    url:	https://google.com/???
-#    desc:	Add me on google+
-#    share_url:
-#    share_title:
-#    share_link:
+  # Setting social media usernames will add icons at the bottom of the sidebar
+  twitter:        sai_prasanna
+  github:         sai-prasanna
+
+  # Setting a disqus username will enable the comment section
+  disqus:         saiprasanna
+
+  # This photo will be used in the about section
+  photo:          /public/img/author.jpg
+
+  # Markdown enabled, can use multiple paragraphs (enabled by `|`)
+  about:          |
+    Hi, I'm Sai Prasanna. I am software engineer from Chennai. I am deeply passionate about computer science. When I am not busy hacking
+    code  (hoping to build skynet) I play guitar, or read books. 
+
+
+kramdown:
+  math_engine: mathjax
+  math_engine_opts:
+    preview: true
