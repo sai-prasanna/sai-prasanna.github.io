@@ -7,7 +7,7 @@ url:              http://saiprasanna.in
 # Set to '' in case of hosting on `http://<your-github-name>.github.io`
 baseurl:          ''
 
-title:            Code sAI
+title:            Code S.A.I
 
 # Markdown enabled, however don't use more than one paragraph (enforced by `>`)
 description:      >
