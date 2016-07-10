@@ -7,7 +7,7 @@ url:              http://saiprasanna.in
 # Set to '' in case of hosting on `http://<your-github-name>.github.io`
 baseurl:          ''
 
-title:            Code SAI
+title:            Code S.A.I
 
 # Markdown enabled, however don't use more than one paragraph (enforced by `>`)
 description:      >
@@ -38,6 +38,7 @@ author:
     I am software engineer from Chennai. I am deeply passionate about computer science.
     When I am not busy hacking code  (hoping to build skynet) I learn to play the guitar,
     and read books.
+
 
 timezone: Asia/Calcutta
 
