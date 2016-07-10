@@ -7,7 +7,7 @@ url:              http://saiprasanna.in
 # Set to '' in case of hosting on `http://<your-github-name>.github.io`
 baseurl:          ''
 
-title:            Code sAI
+title:            Code SAI
 
 # Markdown enabled, however don't use more than one paragraph (enforced by `>`)
 description:      >
@@ -35,9 +35,11 @@ author:
 
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:          |
-    Hi, I'm Sai Prasanna. I am software engineer from Chennai. I am deeply passionate about computer science. When I am not busy hacking
-    code  (hoping to build skynet) I play guitar, or read books. 
+    I am software engineer from Chennai. I am deeply passionate about computer science.
+    When I am not busy hacking code  (hoping to build skynet) I learn to play the guitar,
+    and read books.
 
+timezone: Asia/Calcutta
 
 kramdown:
   math_engine: mathjax
