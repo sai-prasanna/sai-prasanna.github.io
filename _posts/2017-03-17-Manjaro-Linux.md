@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Manjaro Linux - My current daily driver arch based distro
-categories: GNU/Linux
+categories: GNU-Linux
 tags: [KDE, Manjaro, Arch Linux]
 ---
 
