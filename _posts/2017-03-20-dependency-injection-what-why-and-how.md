@@ -54,7 +54,7 @@ that our UserModel should be a singleton.
 class UserModel {
 
     static let sharedInstance = UserModel()
-    
+
     var name: String {
         get {
             return NSUserDefaults.standard.string(forKey: "userName")  ?? ""
@@ -63,9 +63,9 @@ class UserModel {
             NSUserDefaults.standard.set(newValue, forKey:"userName")
         }
     }
-    
+
     func greet() -> String {
-    	return "\(name), Vannakam :)"
+        return "\(name), Vannakam :)"
     }
 }
 
@@ -135,9 +135,9 @@ Since UserModel.sharedInstance is immutable, either we can't replace it with our
 class UserProfile: UIViewController {
     
     let userModel = UserModel()
-    
+
     func viewDidLoad() {
-    	userNameLabel.text = userModel
+        userNameLabel.text = userModel
         //...
     }
 }
@@ -180,20 +180,20 @@ protocol Serializing {
 }
 
 class UserModel {
-	static let serializer: Serializing
+    static let serializer: Serializing
 
-	init(_ serializer: Serializing) {
-	    self.serializer = serializer
-	}
+    init(_ serializer: Serializing) {
+        self.serializer = serializer
+    }
 
-	var name: String {
+    var name: String {
         get {
             return serializer.string(forKey: "userName")  ?? ""
          }
         set {
             serializer.setObject(newValue, forKey:"userName")
         }
-	}
+    }
     
 }
 
@@ -216,23 +216,23 @@ Or for our fancy multiple user use case we can also do this. (Note did this in a
 
 struct MultiUserSerializer: Serializing {
 
-	let serializer: Serializing
+    let serializer: Serializing
     init(_ serializer: Serializing) {
-    	self.serializer = serializer
+        self.serializer = serializer
     }
-    
+
     // So we fetch the current currentUserId and use that to prefix stored data
     private func fetchCurrentUserId() {
-    	return serializer.string(forKey: "CURRENT_USER_ID") ?? "0"
+        return serializer.string(forKey: "CURRENT_USER_ID") ?? "0"
     }
-   	
+
     func string(forKey defaultName: String) -> String? {
-    	return serializer.string(forKey: fetchCurrentUserId() + ":" + defaultName)
+        return serializer.string(forKey: fetchCurrentUserId() + ":" + defaultName)
     }
-	
+
     func set(_ value: Any?, forKey defaultName: String) {
-  		return serializer.set(value, forKey defaultName: fetchCurrentUserId() + ":" + defaultName)
-  	}
+        return serializer.set(value, forKey defaultName: fetchCurrentUserId() + ":" + defaultName)
+    }
 
 }
 
@@ -262,14 +262,14 @@ Sometimes you don't have the time, or just sure that concrete type is what is ne
 class UserProfile: UIViewController {
     
     let userModel: UserModel
-	
+
     // This works only if you don't use storyboards
-	init(userModel: UserModel) {
-    	self.userModel = userModel
+    init(userModel: UserModel) {
+        self.userModel = userModel
     }
 
-	func viewDidLoad() {
-    	userNameLabel.text = userModel.name
+    func viewDidLoad() {
+        userNameLabel.text = userModel.name
     }
 }
 
@@ -353,9 +353,8 @@ func someMethod() {
 // After injection
 
 func someMethod(_ x: XService) {
-	let y = x.something() + 10
+    let y = x.something() + 10
     return y
-
 }
 
 ```
@@ -394,14 +393,14 @@ class NetworkingFactory {
 	
     let a: A
     init(a: A) {
-    	self.a = A
+        self.a = A
     }
-		
-	func create(_ withProxy: Bool) -> Networking {
-    	 if (withProxy) {
-         	return ProxyNetworking(a: a)
+
+    func create(_ withProxy: Bool) -> Networking {
+         if (withProxy) {
+            return ProxyNetworking(a: a)
          } else {
-         	return NormalNetworking(a: a)
+            return NormalNetworking(a: a)
          }
     }
 }
@@ -410,15 +409,15 @@ class NetworkingFactory {
 class Some :UIViewController {
 
   // This has to be injected via property injection
-  var networkingFactory: NetworkingFactory! 
-	
-  var networking: Networking?
-  
-  @IBOutlet weak var proxySwitch: UISwitch!
-  
-  @IBAction func userTappedSubmit(sender: UIButton) {
-    networking = networkingFactory.create(withProxy: proxySwitch.isOn)
-  }
+    var networkingFactory: NetworkingFactory! 
+
+    var networking: Networking?
+
+    @IBOutlet weak var proxySwitch: UISwitch!
+
+    @IBAction func userTappedSubmit(sender: UIButton) {
+        networking = networkingFactory.create(withProxy: proxySwitch.isOn)
+    }
 }
 
 
@@ -426,16 +425,16 @@ class Some :UIViewController {
 
 class Some :UIViewController {
 
-  // This has to be injected via property injection
-  var networkingFactory: ((Bool) -> Networking)!
-	
-  var networking: Networking?
-  
-  @IBOutlet weak var proxySwitch: UISwitch!
-  
-  @IBAction func userTappedSubmit(sender: UIButton) {
-    networking = networkingFactory(proxySwitch.isOn)
-  }
+    // This has to be injected via property injection
+    var networkingFactory: ((Bool) -> Networking)!
+
+    var networking: Networking?
+
+    @IBOutlet weak var proxySwitch: UISwitch!
+
+    @IBAction func userTappedSubmit(sender: UIButton) {
+        networking = networkingFactory(proxySwitch.isOn)
+    }
 }
 
 
@@ -526,33 +525,29 @@ Though I recommend the framework approach, supposing you don't want to use frame
 
 
 class UserModel {
-	static let serializer: Serializing
+    static let serializer: Serializing
 
-	init(_ serializer: Serializing = PoormanDIContainer.instance.getSerializer()) { // Poor man DI
-    	self.serializer = serializer
+    init(_ serializer: Serializing = PoormanDIContainer.instance.getSerializer()) { // Poor man DI
+        self.serializer = serializer
     }
 
     var name: String {
-    	get {
-        	return serializer.string(forKey: "userName")  ?? ""
+        get {
+            return serializer.string(forKey: "userName")  ?? ""
          }
-		set {
-        	serializer.setObject(newValue, forKey:"userName")
+        set {
+            serializer.setObject(newValue, forKey:"userName")
         }
     }
-    
 }
 
 
 class PoorManDIContainer {
     let instance = PoorManDIContainer() 
-    
-    
     func getSerializer() -> Serializing {
-    	// If Serializer has some dependencies, it will again use default constructor to obtain it from PoorManDIContainer
-    	return Serializer() 
+        // If Serializer has some dependencies, it will again use default constructor to obtain it from PoorManDIContainer
+        return Serializer() 
     }
-
 }
 
 
