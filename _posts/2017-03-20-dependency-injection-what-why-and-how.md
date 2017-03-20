@@ -30,7 +30,7 @@ Constructor, Property, Method are where we usually do object creation, and that 
 2. Property Injection
 3. Method Injection
 
-We will explore the 3 types in the [How to do Dependency Injection?](#how).
+We will explore the 3 types the How? section..
 
 
 # Why Dependency Injection?
@@ -52,15 +52,18 @@ that our UserModel should be a singleton.
 
 ```swift
 class UserModel {
-	static let sharedInstance = UserModel()
+
+    static let sharedInstance = UserModel()
+    
     var name: String {
-    	get {
-        	return NSUserDefaults.standard.string(forKey: "userName")  ?? ""
-         }
-		set {
-        	NSUserDefaults.standard.set(newValue, forKey:"userName")
+        get {
+            return NSUserDefaults.standard.string(forKey: "userName")  ?? ""
+        }
+        set {
+            NSUserDefaults.standard.set(newValue, forKey:"userName")
         }
     }
+    
     func greet() -> String {
     	return "\(name), Vannakam :)"
     }
@@ -106,8 +109,8 @@ Now you want to unit test a viewcontroller that uses this singleton,
 
 class UserProfile: UIViewController {
 
-	func viewDidLoad() {
-    	greetingLabel.text = UserModel.sharedInstance.greet()
+    func viewDidLoad() {
+        greetingLabel.text = UserModel.sharedInstance.greet()
         //...
     }
 }
@@ -132,8 +135,8 @@ Since UserModel.sharedInstance is immutable, either we can't replace it with our
 class UserProfile: UIViewController {
     
     let userModel = UserModel()
-
-	func viewDidLoad() {
+    
+    func viewDidLoad() {
     	userNameLabel.text = userModel
         //...
     }
@@ -176,22 +179,21 @@ protocol Serializing {
     func set(_ value: Any?, forKey defaultName: String)
 }
 
-
 class UserModel {
 	static let serializer: Serializing
 
 	init(_ serializer: Serializing) {
-    	self.serializer = serializer
-    }
+	    self.serializer = serializer
+	}
 
-    var name: String {
-    	get {
-        	return serializer.string(forKey: "userName")  ?? ""
+	var name: String {
+        get {
+            return serializer.string(forKey: "userName")  ?? ""
          }
-		set {
-        	serializer.setObject(newValue, forKey:"userName")
+        set {
+            serializer.setObject(newValue, forKey:"userName")
         }
-    }
+	}
     
 }
 
@@ -205,7 +207,7 @@ extension NSUserDefaults: Serializing {}
 Now to use user defaults as our serializer, we do the following.
 
 ```swift
-UserModel(NSUserDefaults.standard)
+UserModel(serializer: NSUserDefaults.standard)
 ```
 
 Or for our fancy multiple user use case we can also do this. (Note did this in a hurry, it may have edge cases, just providing it as a illustration)
@@ -236,9 +238,9 @@ struct MultiUserSerializer: Serializing {
 
 //Instantiate using userdefaults, assume we implemented contextFetcher somewhere else
 
-let multiUserSerializer = MultiUserSerializer(NSUserDefaults.standard)
+let multiUserSerializer = MultiUserSerializer(serializer: NSUserDefaults.standard)
 
-let userModel = UserModel(multiUserSerializer)
+let userModel = UserModel(serializer: multiUserSerializer)
 
 ```
 
@@ -280,9 +282,9 @@ We still gain advantages of unit testability using ordinary mock objects, and al
 (But if you have to do something to notify changes in data, that is seperate topic)
  
 ```
-let multiUserSerializer = MultiUserSerializer(NSUserDefaults.standard)
-let multiUserModel = UserModel(multiUserSerializer)
-let userProfile = UserProfile(multiUserModel)
+let multiUserSerializer = MultiUserSerializer(serializer: NSUserDefaults.standard)
+let multiUserModel = UserModel(serializer: multiUserSerializer)
+let userProfile = UserProfile(userModel: multiUserModel)
 ```
 
 ### Oh no! My constructor is becoming a monstrosity..
@@ -325,9 +327,9 @@ class UserProfile: UIViewController {
     }
 }
 
-let multiUserSerializer = MultiUserSerializer(NSUserDefaults.standard)
-let multiUserModel = UserModel(multiUserSerializer)
-let userProfileVC = UIStoryboard.instantiateViewController(withIdentifier: "UserProfileVC")
+let multiUserSerializer = MultiUserSerializer(serializer: NSUserDefaults.standard)
+let multiUserModel = UserModel(serializer: multiUserSerializer)
+let userProfileVC = UIStoryboard.instantiateViewController(withIdentifier: "UserProfileVC") as! UserProfile
 userProfileVC.userModel = multiUserModel
 
 ```
@@ -437,9 +439,7 @@ class Some :UIViewController {
 }
 
 
-
 ```
-
 
 # Dependency injection - Containers & Frameworks
 
@@ -467,7 +467,6 @@ For example:
  // So to create A, You have to create NetworkService, X, Y, Z 
 
 A(networking NetworkService(x: X(), y: Y(), z: Z()))
- 
 
 ```
 
