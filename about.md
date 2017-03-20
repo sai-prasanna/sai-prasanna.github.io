@@ -14,5 +14,3 @@ title: About
 {% endif %}
 
 {{ site.author.about }}
-
-[write something about self]
