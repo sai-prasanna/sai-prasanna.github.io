@@ -168,7 +168,7 @@ DI helps to solve the variety of issues that we face above, with regard to  Unit
 So we will be injecting a serializer into UserModel via constructor.
 
 
-### Move dependency to constructor, and if possible make it a interface/protocol type instead of concrete class/struct
+**Move dependency to constructor, and if possible make it a interface/protocol type instead of concrete class/struct**
 
 So we remove singleton access to userdefaults. And rather pass a serializer protocol which has methods we require for serialization to constructor.
 
