@@ -2,7 +2,7 @@
 
 layout: post
 title:  Dependency Injection - What, Why and How?
-date:   2016-04-02
+date:   2017-03-20
 categories: Design Patterns
 tags: [iOS, Swift]
 
