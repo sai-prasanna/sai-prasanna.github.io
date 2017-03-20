@@ -281,7 +281,7 @@ We still gain advantages of unit testability using ordinary mock objects, and al
 
 (But if you have to do something to notify changes in data, that is seperate topic)
  
-```
+```swift
 let multiUserSerializer = MultiUserSerializer(serializer: NSUserDefaults.standard)
 let multiUserModel = UserModel(serializer: multiUserSerializer)
 let userProfile = UserProfile(userModel: multiUserModel)
@@ -291,7 +291,7 @@ let userProfile = UserProfile(userModel: multiUserModel)
 
 A common problem you will come across is your UIViewController (if you don't use storyboards in the above case) constructor becomes a monstrosity like the following.
 
-``` 
+```swift
 class UserProfile: UIViewController {
 
 init(userModel: UserModel, apiService: APIService, x: XService, y:YService, z: ZService, ....) 
@@ -322,8 +322,8 @@ class UserProfile: UIViewController {
     
     var userModel: UserModel!
 
-	func viewDidLoad() {
-    	userNameLabel.text = userModel.name
+    func viewDidLoad() {
+        userNameLabel.text = userModel.name
     }
 }
 
