@@ -126,14 +126,14 @@ Since UserModel.sharedInstance is immutable, either we can't replace it with our
 ### 2. Instantiation inside our code constraints creates strong coupling, creating harmful constraints
 
  In our scenario, by using a singleton, we tied our self to single UserModel, now our app needs multiple user models. So generally using singletons will make it hard to adapt to new use cases where, what you thought as a singleton suddenly is not single anymore.
- 
+
 
  But consider that we didn't use , but instantiated UserModel, by calling `UserModel()` wherever we needed it. ike
 
 ```swift 
 
 class UserProfile: UIViewController {
-    
+
     let userModel = UserModel()
 
     func viewDidLoad() {
@@ -194,7 +194,7 @@ class UserModel {
             serializer.setObject(newValue, forKey:"userName")
         }
     }
-    
+
 }
 
 ```
@@ -260,7 +260,7 @@ Sometimes you don't have the time, or just sure that concrete type is what is ne
 ```swift 
 
 class UserProfile: UIViewController {
-    
+
     let userModel: UserModel
 
     // This works only if you don't use storyboards
@@ -280,7 +280,7 @@ Here we just move UserModel creation out of the controller, but we don't bother 
 We still gain advantages of unit testability using ordinary mock objects, and also we are free to use our multi user serialized UserModel , hence making UserProfile support multi user model without changing any logic in user profile.
 
 (But if you have to do something to notify changes in data, that is seperate topic)
- 
+
 ```swift
 let multiUserSerializer = MultiUserSerializer(serializer: NSUserDefaults.standard)
 let multiUserModel = UserModel(serializer: multiUserSerializer)
@@ -319,7 +319,7 @@ Sometimes you don't create  objects of classes, some messy framework does it.For
 ```swift 
 
 class UserProfile: UIViewController {
-    
+
     var userModel: UserModel!
 
     func viewDidLoad() {
@@ -375,14 +375,14 @@ protocol Networking {
 }
 
 class ProxyNetworking: Networking  {
-	init(a: A) {
-    	
+    init(a: A) {
+
     }
 }
 
 class NormalNetworking: Networking {
-	init(a: A) {
-    	
+    init(a: A) {
+
     }
 }
 
@@ -390,7 +390,7 @@ class NormalNetworking: Networking {
 // Injection Via Factory Class
 
 class NetworkingFactory {
-	
+
     let a: A
     init(a: A) {
         self.a = A
@@ -453,15 +453,15 @@ For example:
 
 ```swift
  class A { 
- 	var propertyInjectionVar :V!
-    
+    var propertyInjectionVar :V!
+
     init(networking: Networking, ...) 
   }
 
  // To create A we have to create networking and also fill out any property injection vars it needs
- 
+
  class NetworkService: Networking { init(x: X, y: Y, z: Z) {} }
- 
+
  // Now networking will inturn have its dependencies , which inturn have more ..
  // So to create A, You have to create NetworkService, X, Y, Z 
 
@@ -469,8 +469,7 @@ A(networking NetworkService(x: X(), y: Y(), z: Z()))
 
 ```
 
-So we can build something to store list of dependency type, and their concrete implementation. If we have done it correctly we will
-have a table like this
+So we can build something to store list of dependency type, and their concrete implementation. If we have done it correctly we will have a table of mappings.
 
 
 | Dependency Type  |  Implementation type   |
@@ -493,20 +492,18 @@ Containers also allow you to autofill property injection, handle lifecycle of de
 
 Among the DI frameworks exiting now for swift, I recommend Dip. Dip has some nifty features to make your DI pain free.
 
-Here are its features. 
-
 
 ### Features
 
-- **[Scopes](../../wiki/scopes)**. Dip supports 5 different scopes (or life cycle strategies): _Unique_, _Shared_, _Singleton_, _EagerSingleton_, _WeakSingleton_;
-- **[Auto-wiring](../../wiki/auto-wiring)** & **[Auto-injection](../../wiki/auto-injection)**. Dip can infer your components' dependencies injected in constructor and automatically resolve them as well as dependencies injected with properties.
-- **[Resolving optionals](../../wiki/resolving-optionals)**. Dip is able to resolve constructor or property dependencies defined as optionals.
-- **[Type forwarding](../../wiki/type-forwarding)**. You can register the same factory to resolve different types implemeted by a single class.
-- **[Circular dependencies](../../wiki/circular-dependencies)**. Dip will be able to resolve circular dependencies if you will follow some simple rules;
-- **[Storyboards integration](../../wiki/storyboards-integration)**. You can easily use Dip along with storyboards and Xibs without ever referencing container in your view controller's code;
-- **[Named definitions](../../wiki/named-definitions)**. You can register different factories for the same protocol or type by registering them with [tags]();
-- **[Runtime arguments](../../wiki/runtime-arguments)**. You can register factories that accept up to 6 runtime arguments (and extend it if you need);
-- **[Easy configuration](../../wiki/containers-collaboration)** & **Code generation**. No complex containers hierarchy, no unneeded functionality. Tired of writing all registrations by hand? There is a [cool code generator](https://github.com/ilyapuchka/dipgen) that will create them for you. The only thing you need is to annotate your code with some comments.
+- **Scopes**. Dip supports 5 different scopes (or life cycle strategies): _Unique_, _Shared_, _Singleton_, _EagerSingleton_, _WeakSingleton_;
+- **Auto-wiring** & **Auto-injection**. Dip can infer your components' dependencies injected in constructor and automatically resolve them as well as dependencies injected with properties.
+- **Resolving optionals**. Dip is able to resolve constructor or property dependencies defined as optionals.
+- **Type forwarding**. You can register the same factory to resolve different types implemeted by a single class.
+- **Circular dependencies**. Dip will be able to resolve circular dependencies if you will follow some simple rules;
+- **Storyboards integration**. You can easily use Dip along with storyboards and Xibs without ever referencing container in your view controller's code;
+- **Named definitions**. You can register different factories for the same protocol or type by registering them with [tags]();
+- **Runtime arguments**. You can register factories that accept up to 6 runtime arguments (and extend it if you need);
+- **Easy configuration** & **Code generation**. No complex containers hierarchy, no unneeded functionality. Tired of writing all registrations by hand? There is a [cool code generator](https://github.com/ilyapuchka/dipgen) that will create them for you. The only thing you need is to annotate your code with some comments.
 - **Weakly typed components**. Dip can resolve "weak" types when they are unknown at compile time.
 - **Thread safety**. Registering and resolving components is thread safe;
 - **Helpful error messages and configuration validation**. You can validate your container configuration. If something can not be resolved at runtime Dip throws an error that completely describes the issue;
