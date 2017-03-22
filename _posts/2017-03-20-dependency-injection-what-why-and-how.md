@@ -8,8 +8,8 @@ tags: [iOS, Swift]
 
 ---
 
-We are going to explore dependency injection with emphasis on swift iOS development.But the concept
-applies to most object oriented languages. We will also see some practicial considerations on 
+We are going to explore dependency injection with emphasis on swift iOS development. But the concept
+applies to most object oriented languages. We will also see some practical considerations on 
 applying DI in iOS environment. This article is result of my deep dive into implementing DI, and learning about 
 various practical, theoretical aspects of it.
 
@@ -277,7 +277,7 @@ let multiUserModel = UserModel(serializer: multiUserSerializer)
 let userProfile = UserProfile(userModel: multiUserModel)
 ```
 
-###  My constructor is becoming a monstrosity :( ..
+### My constructor is a monster now :(
 
 A common problem which you will come across is, your UIViewController (if you don't use storyboards) or any class where you do DI becomes a to big.
 
@@ -301,7 +301,7 @@ MVVM(Nodel View ViewModel) or MVP. Whew! DI just solved Huge ViewController prob
 
 We seemed to have solved all our above problems, why bother with more types of injections? 
 
-> ### If you don't control the creation of a object, your best bet is property injection. But prefer constructor injection if that's not the case.
+> If you don't control the creation of a object, your best bet is property injection. But prefer constructor injection if that's not the case.
 
 Sometimes you don't create objects of classes, some messy framework does it. For example, if you use Storyboards, you can't do stuff like `let userProfileViewController = UserProfile(multiUserModel)`. You would have to refactor to something like
 
@@ -351,9 +351,7 @@ func someMethod(_ x: XService) {
 
 ```
 
-
 ## Runtime Injection - Factory pattern
-
 
 Sometimes you want to create a object of a particular class in runtime. But you want to use only protocol type(or a super type) instead of actual implementation (or subclass). Let's say you need a networking service, which you set based on a user action, but as you are going to need it in runtime, you may think that you can't inject it. 
 
