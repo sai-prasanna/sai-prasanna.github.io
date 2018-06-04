@@ -7,11 +7,11 @@ url:              http://saiprasanna.in
 # Set to '' in case of hosting on `http://<your-github-name>.github.io`
 baseurl:          ''
 
-title:            Code S.A.I
+title:            Sai Prasanna
 
 # Markdown enabled, however don't use more than one paragraph (enforced by `>`)
 description:      >
-  Engineer by day, Hacker by night, Guitarist in between and Philosopher forever.
+  Musings on machine learning research, philosophy, programming languages and endless other things that fancy my curiosity.
 
 # The tags listed as entries in the sidebar
 sidebar_tags:     []
