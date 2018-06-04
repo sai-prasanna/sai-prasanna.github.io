@@ -17,7 +17,10 @@ Open Information Extraction aims to extract one or more (Entity 1, Relationship,
 **Example**
 
 ```
-"Deep learning is a subfield of machine learning." -> (Deep learning, is a subfield of , machine learning) 
+"Deep learning is a subfield of machine learning." 
+                   |
+                   v
+(Deep learning, is a subfield of , machine learning) 
 ```
 
 Existing methods use handcrafted rules written on **syntatic parsers** which have poor perfomance and suffer from **cascading of errors**.  
