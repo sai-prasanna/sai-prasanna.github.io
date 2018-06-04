@@ -35,9 +35,9 @@ author:
 
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:          |
-    I am software engineer from Chennai. I am deeply passionate about computer science.
-    When I am not busy hacking code  (hoping to build skynet) I learn to play the guitar,
-    and read books.
+    I am an applied researcher working focusing on NLP using machine learning. I am passionate about computer science, programming and philosophy.
+    When I am not research papers or training neural nets I practise my electric guitar,
+    read books.
 
 
 timezone: Asia/Calcutta
