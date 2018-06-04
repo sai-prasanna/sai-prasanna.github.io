@@ -3,10 +3,10 @@ layout: post
 title:  PaperWatch #001 - Neural Open Information Extraction (ACL 2018)
 date:   2018-06-04 08:00:00
 categories: machine learning
-tags: [Paper Watch]
+tags: [PaperWatch, Deep learning, NLP]
 ---
 
-[Paper] (https://arxiv.org/abs/1805.04270) 
+[Paper](https://arxiv.org/abs/1805.04270) 
  
 **TLDR;** Models Open information extraction as  Sequence to sequence problem.
  
