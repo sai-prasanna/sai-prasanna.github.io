@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  PaperWatch #001 : Neural Open Information Extraction (ACL 2018)
+title:  PaperWatch #001 - Neural Open Information Extraction (ACL 2018)
 date:   2018-06-04 08:00:00
 categories: machine learning
 tags: [Paper Watch]
@@ -34,6 +34,6 @@ The source and target vocabulary is same. If unknown word target is found, the m
 
 ## What are the benchmarks?
  
-Evaluating on a large benchmark dataset, this model gets ** 0.473 AUC ** (Area under curve) for Precision-Recall on ** top 5 predictions ** of this model (I think generated from beam search) has better performance , significantly higher than existing systems.  Among existing systems ** OpenIE ** has the best score of  ** 0.373   AUC ** .  
+Evaluating on a large benchmark dataset, this model gets **0.473 AUC** (Area under curve) for Precision-Recall on **top 5 predictions** of this model (I think generated from beam search) has better performance , significantly higher than existing systems.  Among existing systems **OpenIE** has the best score of  **0.373 AUC** .  
  
 One observation of authors is only 11 % of the predictions of Neural model matches with Open IE (rule based) model, but the performance is higher. This could be due to neural model generalizing on some of the patterns hard to capture by rules.
