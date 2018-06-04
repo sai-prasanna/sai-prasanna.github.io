@@ -8,7 +8,7 @@ tags: [PaperWatch, Deep learning, NLP]
 
 [Paper](https://arxiv.org/abs/1805.04270) 
  
-**TLDR;** Models Open information extraction as  Sequence to sequence problem.
+**TLDR;** Models Open information extraction as  Sequence to Sequence problem using neural nets.
  
 ## What is Open information extraction?
 
