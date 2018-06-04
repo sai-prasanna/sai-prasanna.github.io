@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  PaperWatch #001 - Neural Open Information Extraction (ACL 2018)
+title:  PaperWatch 001 - Neural Open Information Extraction (ACL 2018)
 date:   2018-06-04 08:00:00
 categories: machine learning
 tags: [PaperWatch, Deep learning, NLP]
