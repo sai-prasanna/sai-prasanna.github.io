@@ -6,7 +6,7 @@ categories: machine learning
 tags: [PaperWatch, Deep learning, NLP]
 ---
 
-[Paper](https://arxiv.org/abs/1805.04270) 
+[Paper](https://arxiv.org/abs/1805.04270) by Lei Cui, Furu Wei, Ming Zhou
  
 **TLDR;** Models Open information extraction as  Sequence to Sequence problem using neural nets.
  
