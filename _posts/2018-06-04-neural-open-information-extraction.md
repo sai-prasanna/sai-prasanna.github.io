@@ -23,7 +23,7 @@ Open Information Extraction aims to extract one or more (Entity 1, Relationship,
 Existing methods use handcrafted rules written on **syntatic parsers** which have poor perfomance and suffer from **cascading of errors**.  
 This paper applies neural networks to get better accuracy and alleviate errors. 
  
-## How the problem is modeled ? What is the architecture ?
+## How is the problem modeled?
  
 Sequence 2 Sequence task, where you take a source sentence as input and output the information tuple as sequence separated by special tokens (open arg1, arg2, arg3 and close arg1, arg2 arg3).  Currently the model is trained for single tuple extraction. 
 
@@ -32,7 +32,7 @@ Sequence 2 Sequence task, where you take a source sentence as input and output t
 The paper uses a LSTM based **Sequence to Sequence** model with **attention**. 
 The source and target vocabulary is same. If unknown word target is found, the model forms the target probability vector by placing attention on of source sequence as probability of the corresponding source words occurring.
 
-## What are the benchmark results ?
+## What are the benchmarks?
  
 Evaluating on a large benchmark dataset, this model gets ** 0.473 AUC ** (Area under curve) for Precision-Recall on ** top 5 predictions ** of this model (I think generated from beam search) has better performance , significantly higher than existing systems.  Among existing systems ** OpenIE ** has the best score of  ** 0.373   AUC ** .  
  
