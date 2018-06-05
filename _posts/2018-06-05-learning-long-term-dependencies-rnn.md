@@ -8,7 +8,7 @@ tags: [PaperWatch, Deep learning, RNN]
 
 [Paper](https://arxiv.org/pdf/1803.00144.pdf) by Trieu H. Trinh, Andrew M. Dai,  Minh-Thang Luong,  Quoc V. Le
  
-**TLDR;** RNNs can learn very long sequences when auxilary loss for predicting input sequence (forward and backward) from different timesteps is added.
+**TLDR;** RNNs can learn very long sequences (near 16k timestpes) when auxilary loss for predicting input sequence (forward and backward) from different timesteps is added.
  
 ### Problem being addressed
 
@@ -39,7 +39,7 @@ This techinque achieves very significant results on long sequences compared to e
 
 This paper makes a significant experiment to improve a crucial behaviour of RNNs on long sequences. 
 The ablation study is well done.
-This auxillary loss reminded me of the [World models](https://worldmodels.github.io/) paper where the task of predicting future states improves current tasks output.
+This auxillary loss reminded me little of a bit unrelated [World models](https://worldmodels.github.io/) paper where the task of predicting future states improves the current task.
 
 
 
