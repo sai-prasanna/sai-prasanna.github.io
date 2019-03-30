@@ -42,6 +42,7 @@ author:
 
 timezone: Asia/Calcutta
 
+remote_theme: fongandrew/hydeout
 kramdown:
   math_engine: mathjax
   math_engine_opts:
