@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  Manjaro Linux - My current daily driver arch based distro
 categories: GNU-Linux
 tags: [KDE, Manjaro, Arch Linux]
@@ -12,7 +11,7 @@ And as I got a new mechanical keyboard (Reddragon KUMARA, cheap as cherry MX pat
 and a gaming mouse (Logitech G402) recently, I wanted to use my desktop as main programming machine,
 instead of my old macbook air.
 
-![My Current PC with keyboard and mouse](http://saiprasanna.in/public/img/uploads/2017-03-20-my-desktop.JPG)
+![My Current PC with keyboard and mouse](/assets/images/uploads/2017-03-20-my-desktop.JPG)
 
 So to inevitably I was going to reinstall GNU/Linux.Choosing a new linux distro as you all know 
 leads to paralysis due to infinite choice.

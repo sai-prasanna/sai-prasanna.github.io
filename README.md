@@ -1,4 +1,6 @@
-My Blog
+saiprasanna.in
 ========
-Powered by [Mediator](https://github.com/dirkfabisch/mediator) and Jekyll.
+My personal blog focusing on computer science, machine learning and other curiosities
+which fascinate me.
 
+Watch me as I keep tweaking the blog instead of posting. 

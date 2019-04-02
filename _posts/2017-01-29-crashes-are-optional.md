@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  Crashes are Optional! && Write Less, Do More
 categories: talks
 tags: [iOS, swift]
@@ -13,5 +12,4 @@ It also exposed where I have to concentrate to develop my public speaking skills
 
 Here are the slides for the talk. I will try to put up the playground file later.
 
-
-<iframe src="https://docs.zoho.com/show/publish/15oj06f25e1965b3a40388575dcd418c8954e" height="374" width="620"></iframe>
+<iframe width="560" height="315" src="https://docs.zoho.com/show/publish/15oj06f25e1965b3a40388575dcd418c8954e" frameborder="0"> </iframe>

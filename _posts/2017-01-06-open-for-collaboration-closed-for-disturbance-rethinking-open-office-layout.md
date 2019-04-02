@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  Open for Collaboration, Closed for Disturbance
 categories: developer life
 tags: [work place,design]

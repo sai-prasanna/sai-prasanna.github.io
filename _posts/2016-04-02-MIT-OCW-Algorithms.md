@@ -1,11 +1,8 @@
 ---
-
-layout: post
 title:  MIT OCW 6.006 Algorithms Course
 date:   2016-04-02
 categories: algorithms
 tags: [Algorithms, Computer Science, MOOC]
-
 ---
 
 MIT OCW course is one among the best introductory algorithm courses online. It introduces techniques  to analyse, and
@@ -24,6 +21,6 @@ The assignments are one of the fun parts of the whole course. They allow you to 
 
 The course videos are also available in youtube as playlist. Checkout the first video.
 <p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/HtSuA80QTyo?list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HtSuA80QTyo?list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb" frameborder="0"> </iframe>
 </p>
 

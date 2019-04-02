@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  PaperWatch 002 - Learning Longer-term Dependencies in RNNs with Auxiliary Losses (ACL 2018)
 date:   2018-06-05 08:00:00
 categories: machine-learning

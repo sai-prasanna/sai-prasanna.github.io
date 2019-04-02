@@ -1,51 +1,147 @@
-# Permalinks
-permalink: /:categories/:title/
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your entire site, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# `jekyll serve`. If you change this file, please restart the server process.
 
-# Setup
-url: http://saiprasanna.in
+# Theme Settings
+#
+# Review documentation to determine if you should use `theme` or `remote_theme`
+# https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-# Set to '' in case of hosting on `http://<your-github-name>.github.io`
-baseurl: ''
 
-title: Sai Prasanna
+remote_theme           : "mmistakes/minimal-mistakes"
+minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
-# Markdown enabled, however don't use more than one paragraph (enforced by `>`)
-description: >
-  Musings on machine learning research, philosophy, programming languages and endless other things that fancy my curiosity.
+# Site Settings
+title                    : "SAI's not Artificially Intelligent!"
+name                     : "Sai Prasanna"
+description: >- # this means to ignore newlines until "baseurl:"
+  Artificially intelligent ideas on machine learning research in NLP, software development, philosophy, economics, animal rights, music, programming languages and endless other things that fancy my curiosity.
+url                      : "https://saiprasanna.in" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+# baseurl                  : # the subpath of your site, e.g. "/blog"
+# repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+# teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+# logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+# masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+# #
+breadcrumbs            : false # true, false (default)
+words_per_minute         : 200
+comments:
+  provider               : disqus # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
+  disqus:
+    shortname            : saiprasanna # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+search                   : true # true, false (default)
+search_full_content      : true # true, false (default)
 
-# The tags listed as entries in the sidebar
-sidebar_tags: []
-
-# Fallback image and color if not overwritten for tag or post
-# image:            /public/img/cover.png
-color: '#A85641'
-
+# Site Author
 author:
-  name: 'Sai Prasanna'
+  name             : "Sai Prasanna"
+  avatar           : "/assets/images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "I am an applied researcher working on machine learning for NLP."
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/sai_prasanna"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/sai-prasanna"
 
-  # Setting social media usernames will add icons at the bottom of the sidebar
-  twitter: sai_prasanna
-  github: sai-prasanna
+# Site Footer
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/sai_prasanna"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/sai-prasanna"
+# Include
+include:
+  - .htaccess
+  - _pages
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - node_modules
+  - package.json
+  - Rakefile
+  - README
+  - tmp
+  - /docs # ignore Minimal Mistakes /docs
+  - /test # ignore Minimal Mistakes /test
 
-  # Setting a disqus username will enable the comment section
-  disqus: saiprasanna
-
-  # This photo will be used in the about section
-  photo: /public/img/author.jpg
-
-  # Markdown enabled, can use multiple paragraphs (enabled by `|`)
-  about:          |
-    I am an applied researcher working focusing on NLP using machine learning. I am passionate about computer science, programming and philosophy.
-    When I am not research papers or training neural nets I practise my electric guitar,
-    read books.
+# Outputting
+permalink: /:categories/:title/
+paginate: 10 # amount of posts to show
+paginate_path: /page:num/
+timezone: "Asia/Calcutta" # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
-timezone: Asia/Calcutta
+# Plugins (previously gems:)
+plugins:
+  - jekyll-include-cache
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
 
-remote_theme: fongandrew/hydeout
-kramdown:
-  math_engine: mathjax
-  math_engine_opts:
-    preview: true
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: false
+      read_time: true
+      comments: true
+      share: false
+      related: true
 
-theme: jekyll-theme-hacker
+# Archives
+#  Type
+#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
+#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
+#  Path (examples)
+#  - Archive page should exist at path when using Liquid method or you can
+#    expect broken links (especially with breadcrumbs enabled)
+#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
+#  - <base_path/categories/my-awesome-category/index.html ~> path: /categories/
+#  - <base_path/my-awesome-category/index.html ~> path: /
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+# https://github.com/jekyll/jekyll-archives
+# jekyll-archives:
+#   enabled:
+#     - categories
+#     - tags
+#   layouts:
+#     category: archive-taxonomy
+#     tag: archive-taxonomy
+#   permalinks:
+#     category: /categories/:name/
+#     tag: /tags/:name/

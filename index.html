@@ -1,23 +1,7 @@
 ---
-layout: default
-title: Blog
+# You don't need to edit this file, it's empty on purpose.
+# Edit theme's home layout instead if you wanna make some changes
+# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+layout: home
+author_profile: true
 ---
-
-{% for post in site.posts %}
-  {% assign currentdate = post.date | date: "%Y" %}
-  {% if currentdate != date %}
-    {% unless forloop.first %}</ul><hr/>{% endunless %}
-    <h2 id="y{{post.date | date: "%Y"}}" class="page-title">{{ currentdate }}</h2>
-    <ul class="related-posts">
-    {% assign date = currentdate %}
-  {% endif %}
-  <li>
-    <h4>
-      <a href="{{ site.baseurl }}{{ post.url }}">
-        <span>{{ post.title }}</span>
-        <small>{{ post.date | date_to_string }}</small>
-      </a>
-    </h4>
-  </li>
-  {% if forloop.last %}</ul><hr/>{% endif %}
-{% endfor %}

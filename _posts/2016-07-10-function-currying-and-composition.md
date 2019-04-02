@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  Function Currying, Composition in Redux Middleware
 categories: functional-programming
 tags: [Javascript, Redux, Functional Programming]

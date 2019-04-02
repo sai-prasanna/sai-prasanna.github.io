@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  Creation and Consumption
 categories: notetoself
 tags: [Note to self]
