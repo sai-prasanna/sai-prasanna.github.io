@@ -12,13 +12,13 @@
 
 
 remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-title                    : "Sai's Artificially Intelligent Rants"
+title                    : " λf.(λg.f (g g)) (λg.f (g g)) SAI"
 name                     : "Sai Prasanna"
 description: >- # this means to ignore newlines until "baseurl:"
-  Artificially intelligent ideas on machine learning research in NLP, software development, philosophy, economics, animal rights, music, programming languages and endless other things that fancy my curiosity.
+  Blog on machine learning research in NLP, software development, philosophy, economics, animal rights, music, programming languages and endless other things that fancy my curiosity.
 url                      : "https://saiprasanna.in" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 # baseurl                  : # the subpath of your site, e.g. "/blog"
 # repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -113,7 +113,7 @@ defaults:
     values:
       layout: single
       classes: wide
-      author_profile: false
+      author_profile: true
       read_time: true
       comments: true
       share: false
@@ -135,14 +135,3 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
-# https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
