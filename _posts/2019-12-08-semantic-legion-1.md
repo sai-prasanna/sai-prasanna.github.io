@@ -47,9 +47,9 @@ This is a great practical example of using information bottlenecks to analyze ne
 
 #### [AIDungeon 2 is here](http://www.aidungeon.io/2019/12/aidungeon2-is-here.html)
 
-![https://twitter.com/nickwalton00/status/1199368492987953152](https://pbs.twimg.com/media/EKUDSH9VAAEvscg?format=jpg&name=small)
+![https://aiweirdness.com/post/189511103367/play-ai-dungeon-2-become-a-dragon-eat-the-moon](https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSMELPoU7Br4TBHmaDn-eCYqQMFFrFUPlELxS1pYR1i3iPBOLTO)
 
-This is a fun application of GPT2.  Nick Walton an AI researcher has adapted GPT2 to generate user guided "Choose your own" text RPG type games. Now you can try out anything you fancy by just issuing commands like "Cast a spell to Reverse entropy". The model weaves your actions to generalte plausible/surreal story line continuations. The nature of the model make them generate surreal dream like RPG scenarios which you can use your actions to drive. There is glaring consistency issues in the generated story lines. This points to a symbolic gap that is yet to be filled.
+This is a fun application of GPT2.  [Nick Walton](https://twitter.com/nickwalton00) has adapted GPT2 to generate user guided "Choose your own" text RPG type games. Now you can try out anything you fancy by just issuing commands like "Cast a spell to Reverse entropy". The model weaves your actions to generalte plausible/surreal story line continuations. The nature of the model make them generate surreal dream like RPG scenarios which you can use your actions to drive. There is glaring consistency issues in the generated story lines. This points to a symbolic gap that is yet to be filled.
 
 [Hacker News Discussion on AIDungeon 2](https://news.ycombinator.com/item?id=21717022)
 
