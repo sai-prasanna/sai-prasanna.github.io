@@ -32,7 +32,7 @@ Facebook extends the study and checks it for various architectures, tasks and op
 Information bottleneck theory a hypothesis about how neural nets learn is creating some buzz. One of the claims is that the output of earlier layers have more mutual information with the inputs while final layer outputs have more mutual information with the outputs than the inputs. The information about input gets compressed in each layer.
 
 ![Information Bottleneck process](https://d2r55xnwy6nx47.cloudfront.net/uploads/2017/09/DeepLearning_5001.jpg)
-{: style="text-align: center; height: 800px;"}
+{: style="text-align: center;"}
 *[Lucy Reading-Ikkanda/Quanta Magazine; adapted from arXiv:1703.00810 [cs.LG]](https://www.quantamagazine.org/new-theory-cracks-open-the-black-box-of-deep-learning-20170921/)*
 {: style="color:gray; font-size: 80%; text-align: center;"}
 
