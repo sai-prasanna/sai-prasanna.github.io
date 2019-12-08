@@ -45,11 +45,12 @@ Facebook extends the study and checks it for various architectures, tasks and op
 ### Large Language Models
 
 #### [AIDungeon 2 is here](http://www.aidungeon.io/2019/12/aidungeon2-is-here.html)
-[Hacker News Discussion](https://news.ycombinator.com/item?id=21717022)
 
-![https://twitter.com/nickwalton00/status/1199368492987953152?ref_src=twsrc^tfw](https://pbs.twimg.com/media/EKUDSH9VAAEvscg?format=jpg&name=small)
+![https://twitter.com/nickwalton00/status/1199368492987953152](https://pbs.twimg.com/media/EKUDSH9VAAEvscg?format=jpg&name=small)
 
 This is a fun one.  Nick Walton an AI researcher has adapted GPT2 to generate user guided "Choose your own" text RPG type games. Now you can try out anything you fancy by just issuing commands like "Cast a spell to Reverse entropy". The model weaves your actions to generalte plausible/surreal story line continuations. The nature of the model make them generate surreal dream like RPG scenarios which you can use your actions to drive. There is glaring consistency issues in the generated story lines. This points to a symbolic gap that is yet to be filled.
+
+[Hacker News Discussion on AIDungeon 2](https://news.ycombinator.com/item?id=21717022)
 
 #### [Controlling Text Generation with Plug and Play Language Models](https://eng.uber.com/pplm/)
 On the topic of controlling language models, uber research has found a way to control the generation of models like GPT2 without fine-tuning. 
