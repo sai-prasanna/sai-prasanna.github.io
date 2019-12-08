@@ -40,6 +40,23 @@ Information bottleneck theory a hypothesis about how neural nets learn is creati
 
 This is a great practical example of using information bottlenecks to analyze neural nets behaviour. This research (accompanied by inspirationally well written blog post) compares the evolution of representations in three different NLP encoder models. And in part explains some empirical findings such as why de-noising objective works better than casual language model objective or encoders from translation objective  for transfer learning.
 
+### [Universal Adversarial Triggers for Attacking and Analyzing NLP (Wallace et al. EMNLP 19)](http://www.ericswallace.com/triggers)
+This paper finds magic spells that make your NLP models malfunction. They find phrases that cause a specific model prediction when concatenated to 𝘢𝘯𝘺 input from a dataset. These phrases are reported to work across architectures for the same dataset.
+
+    Triggers cause:
+
+    1. GPT-2 to spew racism
+    2. SQuAD models to answer "to kill american people" for 72% of questions asking "Why..."
+    3. Classification models to drop from 90% accuracy to 1%
+
+### [AllenNLP Interpret](https://allennlp.org/interpret)
+
+This is a great set of features for interpretability added to AllenNLP library. 
+
+>We present AllenNLP Interpret, a toolkit built on top of AllenNLP for interactive model interpretations. The toolkit makes it easy to apply gradient-based saliency maps and adversarial attacks to new models, as well as develop new interpretation methods. AllenNLP interpret contains three components: a suite of interpretation techniques applicable to most models, APIs for developing new interpretation methods (e.g., APIs to obtain input gradients), and reusable front-end components for visualizing the interpretation results. 
+
+The amazing thing here is with implementing a simple interface in your model predictor allows you to apply a suite of interpretability techniques for our models.
+
 
 ### [AIDungeon2 is here](http://www.aidungeon.io/2019/12/aidungeon2-is-here.html)
 
