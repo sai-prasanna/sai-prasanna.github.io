@@ -6,10 +6,9 @@ toc: true
 toc_label: Topics
 toc_icon: "yin-yang"
 ---
-I am guilty of spamming people in the degree one of my network with too many links in topics that fancy the Legion of varied interests that haunt me. Following suggestion of Ananda Seelan, I am consolidating my link blasts into a considated blog post format, thus begins the "Semantic Legion". This exercise might help organize the "Legion" in my head and maybe lead to more focused blog posts.
+I am guilty of spamming people in the degree one of my network with too many links in topics that fancy the Legion of varied interests that haunt me. Following the suggestion of Ananda Seelan, I am consolidating my link blasts into a considated blog post format, thus begins the "Semantic Legion". This exercise might help organize the "Legion" in my head and maybe lead to more focused blog posts.
 
 > "My name is Legion, for we are many."
-
 
 ## Machine Learning
 
@@ -50,8 +49,7 @@ This is a great practical example of using information bottlenecks to analyze ne
 #### [AIDungeon 2 is here](http://www.aidungeon.io/2019/12/aidungeon2-is-here.html)
 
 ![AIDungeon 2 generated story example.](https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSMELPoU7Br4TBHmaDn-eCYqQMFFrFUPlELxS1pYR1i3iPBOLTO)
-{: style="height: 100px" }
-*[Aiweirdness.com](https://aiweirdness.com/post/189511103367/play-ai-dungeon-2-become-a-dragon-eat-the-moon)*
+*[Source: aiweirdness.com](https://aiweirdness.com/post/189511103367/play-ai-dungeon-2-become-a-dragon-eat-the-moon)*
 {: style="color:gray; font-size: 80%; text-align: center;"}
 
 This is a fun application of GPT2.  [Nick Walton](https://twitter.com/nickwalton00) has adapted GPT2 to generate user guided "Choose your own" text RPG type games. Now you can try out anything you fancy by just issuing commands like "Cast a spell to Reverse entropy". A truly open world RPG with a AI dungeon master. The model weaves your actions to generalte plausible/surreal story continuations. [Hacker News](https://news.ycombinator.com/item?id=21717022) discussion about it. The nature of the model make them generate surreal dream like scenarios. There are glaring consistency issues in the generated story lines. This points to a symbolic gap that is yet to be filled.
