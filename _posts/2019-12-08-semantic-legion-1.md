@@ -12,9 +12,7 @@ I am guilty of spamming people in the degree one of my network with too many lin
 
 ## Machine Learning
 
-### Lottery Ticket Hypothesis
-
-#### [The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks](https://arxiv.org/abs/1803.03635)
+### [The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks](https://arxiv.org/abs/1803.03635)
 The lottery ticket hypothesis suggests that big Deep Neural Nets train better than smaller nets because they get lucky. Essentially like someone who has purchased more number of lottery tickets.
 
 1. Prune a large neural network by zeroing the bottom x% of weights by magnitude. This can be done one shot or iteratively while training.
@@ -25,13 +23,11 @@ The lottery ticket hypothesis suggests that big Deep Neural Nets train better th
 
 Though the subnetwork is smaller, computations will need sparse matrix multiplication optimizations to be faster.
 
-#### [Understanding the generalization of ‘lottery tickets’ in neural networks](https://ai.facebook.com/blog/understanding-the-generalization-of-lottery-tickets-in-neural-networks)
+### [Understanding the generalization of ‘lottery tickets’ in neural networks](https://ai.facebook.com/blog/understanding-the-generalization-of-lottery-tickets-in-neural-networks)
 
 Facebook extends the study and checks it for various architectures, tasks and optimizer setting. The lottery ticket phenomena seems to occur in most places. The lottery ticket subnetworks generalize across datasets. This blog post is a summary of multiple papers by Facebook AI group in analyzing this phenomena.
 
-### Information Bottleneck Theory
-
-#### [New Theory Cracks Open the Black Box of Deep Learning](https://www.quantamagazine.org/new-theory-cracks-open-the-black-box-of-deep-learning-20170921/)
+### [New Theory Cracks Open the Black Box of Deep Learning](https://www.quantamagazine.org/new-theory-cracks-open-the-black-box-of-deep-learning-20170921/)
 
 Information bottleneck theory a hypothesis about how neural nets learn is creating some buzz. One of the claims is that the output of earlier layers have more mutual information with the inputs while final layer outputs have more mutual information with the outputs than the inputs. The information about input gets compressed in each layer.
 
@@ -39,14 +35,12 @@ Information bottleneck theory a hypothesis about how neural nets learn is creati
 *[Lucy Reading-Ikkanda/Quanta Magazine; adapted from arXiv:1703.00810 [cs.LG]](https://www.quantamagazine.org/new-theory-cracks-open-the-black-box-of-deep-learning-20170921/)*
 {: style="color:gray; font-size: 80%; text-align: center;"}
 
-#### [Evolution of Representations in the Transformer](https://lena-voita.github.io/posts/emnlp19_evolution.html)
+### [Evolution of Representations in the Transformer](https://lena-voita.github.io/posts/emnlp19_evolution.html)
 
 This is a great practical example of using information bottlenecks to analyze neural nets behaviour. This research (accompanied by inspirationally well written blog post) compares the evolution of representations in three different NLP encoder models. And in part explains some empirical findings such as why de-noising objective works better than casual language model objective or encoders from translation objective  for transfer learning.
 
 
-### Large Language Models
-
-#### [AIDungeon2 is here](http://www.aidungeon.io/2019/12/aidungeon2-is-here.html)
+### [AIDungeon2 is here](http://www.aidungeon.io/2019/12/aidungeon2-is-here.html)
 
 This is a real fun application of langauge model generation.  [Nick Walton](https://twitter.com/nickwalton00) has adapted GPT2 to generate user guided "Choose your own" text RPG type games. Now you can try out anything you fancy by just issuing commands like "Cast a spell to Reverse entropy". A truly open world RPG with a AI dungeon master. The model weaves your actions to generalte plausible/surreal story continuations. [Hacker News](https://news.ycombinator.com/item?id=21717022) discussion about it. The nature of the model make them generate surreal dream like scenarios. There are glaring consistency issues in the generated story lines. This points to a symbolic gap that is yet to be filled.
 
@@ -56,8 +50,7 @@ This is a real fun application of langauge model generation.  [Nick Walton](http
 {: style="color:gray; font-size: 80%; text-align: center;"}
 
 
-
-#### [Controlling Text Generation with Plug and Play Language Models](https://eng.uber.com/pplm/)
+### [Controlling Text Generation with Plug and Play Language Models](https://eng.uber.com/pplm/)
 On the topic of controlling language models, uber research has found a way to control the generation of models like GPT2 without fine-tuning. 
 
 ## Quantum Computing, Linear Algebra, Tools for Learning
@@ -71,10 +64,10 @@ The learning approach taken by this article (embedding flash cards + reminders) 
 ### [Augmenting Long-term Memory](http://augmentingcognition.com/ltm.html)
 If you're curious about spaced repition flash card approach to learn new math theorems, machine learning concepts etc Micheal has written extensively about it in the above link.
 
-#### [Anki Flash Cards with Spaced Repitition](https://apps.ankiweb.net/)
+### [Anki Flash Cards with Spaced Repitition](https://apps.ankiweb.net/)
 The free app Anki is example of good software aimed at expanding our capabilites rather than popular objective of draining attention. It has web, desktop and mobile versions for creating Anki (flash) cards with spaced repitition tracking. I am in the process of adopting it for my learning. Not yet successful in integrating it fully, will blog more about my experience in future.
 
-#### [Polar App](https://getpolarized.io/)
+### [Polar App](https://getpolarized.io/)
 Related learning tool I found is Polar. 
 > "A powerful document manager for web pages, textbooks, PDFs, and anything you want to read. Supports tagging, annotation, highlighting and keeps track of your reading progress."
 
