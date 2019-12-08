@@ -6,9 +6,10 @@ toc: true
 toc_label: Topics
 toc_icon: "yin-yang"
 ---
+I am guilty of spamming people in the degree one of my network with too many links in topics that fancy the Legion of varied interests that haunt me. Following suggestion of Ananda Seelan, I am consolidating my link blasts into a considated blog post format, thus begins the "Semantic Legion". This exercise might help organize the "Legion" in my head and maybe lead to more focused blog posts.
 
 > "My name is Legion, for we are many."
-I am guilty of spamming people in degree one connection with too many links in topics that fancy the Legion of varied interests that haunt me. Following suggestion of Ananda Seelan, I am consolidating my link blasts into a considated blog post format, thus begins the "Semantic Legion". This exercise might help organize the "Legion" in my head and maybe lead to more focused blog posts.
+
 
 ## Machine Learning
 
