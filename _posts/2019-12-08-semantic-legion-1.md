@@ -35,7 +35,10 @@ Facebook extends the study and checks it for various architectures, tasks and op
 
 Information bottleneck theory a hypothesis about how neural nets learn is creating some buzz. One of the claims is that the output of earlier layers have more mutual information with the inputs while final layer outputs have more mutual information with the outputs than the inputs. The information about input gets compressed in each layer.
 
-![Lucy Reading-Ikkanda/Quanta Magazine; adapted from arXiv:1703.00810 [cs.LG]](https://d2r55xnwy6nx47.cloudfront.net/uploads/2017/09/DeepLearning_5001.jpg)
+![](https://d2r55xnwy6nx47.cloudfront.net/uploads/2017/09/DeepLearning_5001.jpg)
+{: style="height: 200px;"}
+*[Lucy Reading-Ikkanda/Quanta Magazine; adapted from arXiv:1703.00810 [cs.LG]](https://xkcd.com/224/)*
+{: style="color:gray; font-size: 80%; text-align: center;"}
 
 #### [Evolution of Representations in the Transformer](https://lena-voita.github.io/posts/emnlp19_evolution.html)
 
@@ -46,7 +49,9 @@ This is a great practical example of using information bottlenecks to analyze ne
 
 #### [AIDungeon 2 is here](http://www.aidungeon.io/2019/12/aidungeon2-is-here.html)
 
-![https://aiweirdness.com/post/189511103367/play-ai-dungeon-2-become-a-dragon-eat-the-moon](https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSMELPoU7Br4TBHmaDn-eCYqQMFFrFUPlELxS1pYR1i3iPBOLTO)
+![AIDungeon 2 generated story example.](https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSMELPoU7Br4TBHmaDn-eCYqQMFFrFUPlELxS1pYR1i3iPBOLTO)
+*[Aiweirdness.com](https://aiweirdness.com/post/189511103367/play-ai-dungeon-2-become-a-dragon-eat-the-moon)*
+{: style="color:gray; font-size: 80%; text-align: center;"}
 
 This is a fun application of GPT2.  [Nick Walton](https://twitter.com/nickwalton00) has adapted GPT2 to generate user guided "Choose your own" text RPG type games. Now you can try out anything you fancy by just issuing commands like "Cast a spell to Reverse entropy". A truly open world RPG with a AI dungeon master. The model weaves your actions to generalte plausible/surreal story continuations. [Hacker News](https://news.ycombinator.com/item?id=21717022) discussion about it. The nature of the model make them generate surreal dream like scenarios. There are glaring consistency issues in the generated story lines. This points to a symbolic gap that is yet to be filled.
 
