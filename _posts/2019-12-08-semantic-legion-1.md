@@ -13,18 +13,6 @@ I am guilty of spamming people in degree one connection with too many links in t
 
 ## Machine Learning
 
-### Information Bottleneck Theory
-
-#### [New Theory Cracks Open the Black Box of Deep Learning](https://www.quantamagazine.org/new-theory-cracks-open-the-black-box-of-deep-learning-20170921/)
-
-Information bottleneck theory a hypothesis about how neural nets learn is creating some buzz. One of the claims is that the output of earlier layers have more mutual information with the inputs while final layer outputs have more mutual information with the outputs than the inputs. The information about input gets compressed in each layer.
-
-![Lucy Reading-Ikkanda/Quanta Magazine; adapted from arXiv:1703.00810 [cs.LG]](https://d2r55xnwy6nx47.cloudfront.net/uploads/2017/09/DeepLearning_5001.jpg)
-
-#### [Evolution of Representations in the Transformer](https://lena-voita.github.io/posts/emnlp19_evolution.html)
-
-This is a great practical example of using information bottlenecks to analyze neural nets behaviour. This research (accompanied by inspirationally well written blog post) compares the evolution of representations in three different NLP encoder models. And in part explains some empirical findings such as why de-noising objective works better than casual language model objective or encoders from translation objective  for transfer learning.
-
 ### Lottery Ticket Hypothesis
 
 #### [The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks](https://arxiv.org/abs/1803.03635)
@@ -40,7 +28,20 @@ Though the subnetwork is smaller, computations will need sparse matrix multiplic
 
 #### [Understanding the generalization of ‘lottery tickets’ in neural networks](https://ai.facebook.com/blog/understanding-the-generalization-of-lottery-tickets-in-neural-networks)
 
-Facebook extends the study and checks it for various architectures, tasks and optimizer setting. The lottery ticket phenomena seems to occur in most places. The lottery ticket subnetworks generalize across datasets. The above blog post is summary of multiple papers by Facebook AI group in analyzing this phenomena.
+Facebook extends the study and checks it for various architectures, tasks and optimizer setting. The lottery ticket phenomena seems to occur in most places. The lottery ticket subnetworks generalize across datasets. This blog post is a summary of multiple papers by Facebook AI group in analyzing this phenomena.
+
+### Information Bottleneck Theory
+
+#### [New Theory Cracks Open the Black Box of Deep Learning](https://www.quantamagazine.org/new-theory-cracks-open-the-black-box-of-deep-learning-20170921/)
+
+Information bottleneck theory a hypothesis about how neural nets learn is creating some buzz. One of the claims is that the output of earlier layers have more mutual information with the inputs while final layer outputs have more mutual information with the outputs than the inputs. The information about input gets compressed in each layer.
+
+![Lucy Reading-Ikkanda/Quanta Magazine; adapted from arXiv:1703.00810 [cs.LG]](https://d2r55xnwy6nx47.cloudfront.net/uploads/2017/09/DeepLearning_5001.jpg)
+
+#### [Evolution of Representations in the Transformer](https://lena-voita.github.io/posts/emnlp19_evolution.html)
+
+This is a great practical example of using information bottlenecks to analyze neural nets behaviour. This research (accompanied by inspirationally well written blog post) compares the evolution of representations in three different NLP encoder models. And in part explains some empirical findings such as why de-noising objective works better than casual language model objective or encoders from translation objective  for transfer learning.
+
 
 ### Large Language Models
 
@@ -48,14 +49,14 @@ Facebook extends the study and checks it for various architectures, tasks and op
 
 ![https://twitter.com/nickwalton00/status/1199368492987953152](https://pbs.twimg.com/media/EKUDSH9VAAEvscg?format=jpg&name=small)
 
-This is a fun one.  Nick Walton an AI researcher has adapted GPT2 to generate user guided "Choose your own" text RPG type games. Now you can try out anything you fancy by just issuing commands like "Cast a spell to Reverse entropy". The model weaves your actions to generalte plausible/surreal story line continuations. The nature of the model make them generate surreal dream like RPG scenarios which you can use your actions to drive. There is glaring consistency issues in the generated story lines. This points to a symbolic gap that is yet to be filled.
+This is a fun application of GPT2.  Nick Walton an AI researcher has adapted GPT2 to generate user guided "Choose your own" text RPG type games. Now you can try out anything you fancy by just issuing commands like "Cast a spell to Reverse entropy". The model weaves your actions to generalte plausible/surreal story line continuations. The nature of the model make them generate surreal dream like RPG scenarios which you can use your actions to drive. There is glaring consistency issues in the generated story lines. This points to a symbolic gap that is yet to be filled.
 
 [Hacker News Discussion on AIDungeon 2](https://news.ycombinator.com/item?id=21717022)
 
 #### [Controlling Text Generation with Plug and Play Language Models](https://eng.uber.com/pplm/)
 On the topic of controlling language models, uber research has found a way to control the generation of models like GPT2 without fine-tuning. 
 
-## Quantum Computing, Linear Algebra, Tools for Learning well
+## Quantum Computing, Linear Algebra, Tools for Learning
 
 ### [Quantum Computing for the Very Curious](https://quantum.country/qcvc)
 
