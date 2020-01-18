@@ -12,7 +12,7 @@
 
 
 remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 title                    : " λf.(λg.f (g g)) (λg.f (g g)) SAI"
@@ -112,8 +112,7 @@ defaults:
       type: posts
     values:
       layout: single
-      classes: wide
-      author_profile: true
+      author_profile: false
       read_time: true
       comments: true
       share: false
