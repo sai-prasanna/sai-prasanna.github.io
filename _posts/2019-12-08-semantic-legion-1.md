@@ -2,9 +2,6 @@
 title: Semantic Legion \#001
 categories: semantic-legion
 tags: [Computer Science, Machine Learning, Philosophy, Semantic Legion]
-toc: true
-toc_label: Topics
-toc_icon: "yin-yang"
 ---
 I am guilty of spamming people in the degree one of my network with too many links in topics that fancy the Legion of varied interests that haunt me. Following the suggestion of Ananda Seelan, I am consolidating my link blasts into a considated blog post format, thus begins the "Semantic Legion". This exercise might help organize the "Legion" in my head and maybe lead to more focused blog posts.
 
