@@ -11,10 +11,8 @@
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
 
-# remote_theme           : "mmistakes/minimal-mistakes"
-remote-theme: jekyll/minima
-markdown: kramdown
-minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+remote_theme           : "mmistakes/minimal-mistakes"
+minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 title                    : "λf.(λg.f (g g)) (λg.f (g g)) Sai"
@@ -59,36 +57,36 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/sai-prasanna"
-# Include
-include:
-  - .htaccess
-  - _pages
-exclude:
-  - "*.sublime-project"
-  - "*.sublime-workspace"
-  - vendor
-  - .asset-cache
-  - .bundle
-  - .jekyll-assets-cache
-  - .sass-cache
-  - assets/js/plugins
-  - assets/js/_main.js
-  - assets/js/vendor
-  - Capfile
-  - CHANGELOG
-  - config
-  - Gemfile
-  - Gruntfile.js
-  - gulpfile.js
-  - LICENSE
-  - log
-  - node_modules
-  - package.json
-  - Rakefile
-  - README
-  - tmp
-  - /docs # ignore Minimal Mistakes /docs
-  - /test # ignore Minimal Mistakes /test
+# # Include
+# include:
+#   - .htaccess
+#   - _pages
+# exclude:
+#   - "*.sublime-project"
+#   - "*.sublime-workspace"
+#   - vendor
+#   - .asset-cache
+#   - .bundle
+#   - .jekyll-assets-cache
+#   - .sass-cache
+#   - assets/js/plugins
+#   - assets/js/_main.js
+#   - assets/js/vendor
+#   - Capfile
+#   - CHANGELOG
+#   - config
+#   - Gemfile
+#   - Gruntfile.js
+#   - gulpfile.js
+#   - LICENSE
+#   - log
+#   - node_modules
+#   - package.json
+#   - Rakefile
+#   - README
+#   - tmp
+#   - /docs # ignore Minimal Mistakes /docs
+#   - /test # ignore Minimal Mistakes /test
 
 # Outputting
 permalink: /:categories/:title/
@@ -114,11 +112,13 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
-      read_time: true
+      mathjax: true
+      author_profile: false
+      class: wide
+      read_time: false
       comments: true
       share: false
-      related: true
+      related: false
 
 # Archives
 #  Type
