@@ -8,8 +8,16 @@
    Typography
    ========================================================================== */
 /* system typefaces */
-$sans-serif: -apple-system, BlinkMacSystemFont, "Noto Sans" "Roboto", "Segoe UI",
+$sans-serif: -apple-system, BlinkMacSystemFont, "Noto Sans", "Roboto", "Segoe UI",
   "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
+
+/*
+   Grid
+   ========================================================================== */
+
+$right-sidebar-width-narrow: 150px !default;
+$right-sidebar-width: 200px !default;
+$right-sidebar-width-wide: 300px !default;
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
