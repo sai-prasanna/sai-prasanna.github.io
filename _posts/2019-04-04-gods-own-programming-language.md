@@ -2,9 +2,8 @@
 title: God's own Programming Language
 categories: programming
 tags: [LISP, Programming Languages]
-classes: wide
 toc: true
-toc_label: LISP
+toc_label: Contents
 toc_icon: "yin-yang"
 ---
 
