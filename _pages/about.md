@@ -1,6 +1,7 @@
 ---
 permalink: /about/
 title: "About"
+layout: single
 ---
 Machine learning Research Engineer for NLP, FOSS enthusiast, vegan. Dabbles in AI, computer science, math, armchair philosophy.
 
