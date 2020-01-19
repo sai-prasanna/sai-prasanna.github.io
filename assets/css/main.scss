@@ -16,7 +16,7 @@ $sans-serif: -apple-system, BlinkMacSystemFont, "Noto Sans", "Roboto", "Segoe UI
    Breakpoints
    ========================================================================== */
 
-$max-width: 1400px !default;
+$max-width: 1440px !default;
 
 /*
    Grid
@@ -43,4 +43,7 @@ html {
   @include breakpoint($x-large) {
     font-size: 18px; // change to whatever
   }
+}
+.archive__item-excerpt {
+  font-size: $type-size-5;
 }
