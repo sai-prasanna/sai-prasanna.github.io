@@ -4,6 +4,13 @@
 
 @charset "utf-8";
 
+/*
+   Typography
+   ========================================================================== */
+/* system typefaces */
+$sans-serif: -apple-system, BlinkMacSystemFont, "Noto Sans" "Roboto", "Segoe UI",
+  "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
