@@ -11,12 +11,24 @@
 $sans-serif: -apple-system, BlinkMacSystemFont, "Noto Sans", "Roboto", "Segoe UI",
   "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
 
+
+/*
+   Breakpoints
+   ========================================================================== */
+
+$small: 600px !default;
+$medium: 768px !default;
+$medium-wide: 900px !default;
+$large: 1024px !default;
+$x-large: 1280px !default;
+$max-width: 1400px !default;
+
 /*
    Grid
    ========================================================================== */
 
-$right-sidebar-width-narrow: 150px !default;
-$right-sidebar-width: 200px !default;
+$right-sidebar-width-narrow: 200px !default;
+$right-sidebar-width: 250px !default;
 $right-sidebar-width-wide: 300px !default;
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
@@ -34,10 +46,6 @@ html {
   }
 
   @include breakpoint($x-large) {
-    font-size: 16px; // change to whatever
+    font-size: 18px; // change to whatever
   }
-}
-
-p {
-  margin-bottom: 1em;
 }
