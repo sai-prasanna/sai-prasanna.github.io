@@ -114,7 +114,6 @@ defaults:
       layout: single
       mathjax: true
       author_profile: false
-      class: wide
       read_time: false
       comments: true
       share: false
