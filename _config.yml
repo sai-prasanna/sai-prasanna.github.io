@@ -12,7 +12,7 @@
 
 
 remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 title                    : "λf.(λg.f (g g)) (λg.f (g g)) Sai"
@@ -58,35 +58,35 @@ footer:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/sai-prasanna"
 # # Include
-# include:
-#   - .htaccess
-#   - _pages
-# exclude:
-#   - "*.sublime-project"
-#   - "*.sublime-workspace"
-#   - vendor
-#   - .asset-cache
-#   - .bundle
-#   - .jekyll-assets-cache
-#   - .sass-cache
-#   - assets/js/plugins
-#   - assets/js/_main.js
-#   - assets/js/vendor
-#   - Capfile
-#   - CHANGELOG
-#   - config
-#   - Gemfile
-#   - Gruntfile.js
-#   - gulpfile.js
-#   - LICENSE
-#   - log
-#   - node_modules
-#   - package.json
-#   - Rakefile
-#   - README
-#   - tmp
-#   - /docs # ignore Minimal Mistakes /docs
-#   - /test # ignore Minimal Mistakes /test
+include:
+  - .htaccess
+  - _pages
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - node_modules
+  - package.json
+  - Rakefile
+  - README
+  - tmp
+  - /docs # ignore Minimal Mistakes /docs
+  - /test # ignore Minimal Mistakes /test
 
 # Outputting
 permalink: /:categories/:title/
