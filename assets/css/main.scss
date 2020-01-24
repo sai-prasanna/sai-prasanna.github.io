@@ -32,11 +32,12 @@ $right-sidebar-width-wide: 300px !default;
 
 $background-color: #ffffff !default;
 $text-color: #000 !default;
-$muted-text-color: #222831 !default;
+$muted-text-color: $text-color !default;
 $primary-color: #0092ca !default;
+
 $border-color: mix(#fff, #393e46, 75%) !default;
 $footer-background-color: $primary-color !default;
-$link-color: #393e46 !default;
+$link-color: #0366d6 !default;
 $masthead-link-color: $text-color !default;
 $masthead-link-color-hover: $text-color !default;
 $navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
