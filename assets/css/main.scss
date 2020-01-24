@@ -33,19 +33,14 @@ $right-sidebar-width-wide: 300px !default;
 $background-color: #ffffff !default;
 $text-color: #000 !default;
 $muted-text-color: #222831 !default;
-$primary-color: #000 !default;
+$primary-color: #333 !default;
 
 $border-color: mix(#fff, #393e46, 75%) !default;
 $footer-background-color: $primary-color !default;
-
-
-/* links */
-$link-color: mix(#000, $info-color, 15%) !default;
-$link-color-hover: mix(#000, $link-color, 25%) !default;
-$link-color-visited: mix(#fff, $link-color, 15%) !default;
-$masthead-link-color: $primary-color !default;
-$masthead-link-color-hover: mix(#000, $primary-color, 25%) !default;
-$navicon-link-color-hover: mix(#fff, $primary-color, 75%) !default;
+$link-color: #222 !default;
+$masthead-link-color: #333 !default;
+$masthead-link-color-hover: #4183C4 !default;
+$navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
 
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
