@@ -153,7 +153,7 @@ permalink: /roam-research-software-for-building-a-second-brain
     - ## Exports to plain text
         - This is important for anyone who cares about not getting locked out of your data.
         - Since the product is in development better to take regular backups if you plan to use it.
-- # Final thoughts
+- # Few of other thoughts about Roam
     - The concept of bi-directional editable media in Roam can 
 be transposed to many other products with lots of unstructured text 
 trapped in a rigid hierarchy.
