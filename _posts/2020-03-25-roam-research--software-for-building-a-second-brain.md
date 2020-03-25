@@ -13,7 +13,7 @@ permalink: /roam-research-software-for-building-a-second-brain
     - It is built on simple building blocks that come together (emergent property) to make the whole greater than the sum of its parts. Each building block of Roam might look simple if looked separately, but together they become very powerful.
     - Note: It is still in beta with a pricing yet to be announced. But if you try it I think you will share this sentiment. ![](https://scaledynamix.com/wp-content/uploads/2018/08/takemymoney.jpg)
     - Here is the [Roam white paper](https://roamresearch.com/#/v8/help/page/Vu1MmjinS) written by founders on a Public roam database about why they think Roam is revolutionary.
-- # Painpoints with most of the knowledge-management software
+- # Pain points of most knowledge-management software
     - I have used popular note-taking software like evernote, One-note, Zoho notebook etc. There was always huge friction with these tools. Getting them to work for Note taking, journaling, and project management was such a pain.
     - The only tool that came close was org-mode in Emacs. I used it for the past one year. But even it had a lot of friction due to the reasons I will expand upon below. And emacs is most definitely not for popular use, it is only for the chosen few who are blessed enough to reject the cult of mouse.
     - ## Failure of Files inside Folders way of organization.
@@ -51,16 +51,16 @@ permalink: /roam-research-software-for-building-a-second-brain
 - # Building blocks of Roam that differentiate it 
     - These are the fundamental set of features that make Roam what it is. Since showing is better than telling, I am including 1-minute videos of how each fundamental building blocks of Roam work.
     - ## Basic Layout
-        - <iframe width="560" height="315" src="https://www.youtube.com/watch?v=3SwQ4usbCX4&list=PLirPuSjy7wZAbEY6nLcyQC6HZXRDt_qEL&index=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        - <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/3SwQ4usbCX4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         - Roam's page layout is like any other "outlining" tool. ie It has bullets which can be nested within each other infinitely and the bullets can be collapsed.
         - There is no folder system. All notes are be seen from "All Pages" view in left side-bar, but it is rarely needed because of way roam's navigation is organized. 
         - Roam's home page is the Daily notes page where you can see pages titled by dates. This is the basic dumping ground for all your quick note-taking and journaling, daily tasks, habit tracking for the day.
     - ## Friction Free Link Creation
-        - <iframe width="560" height="315" src="https://www.youtube.com/watch?v=lHkMq3aqDtw&list=PLirPuSjy7wZAbEY6nLcyQC6HZXRDt_qEL&index=3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        - <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/lHkMq3aqDtw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         - Basic way roam allows linking between pages is typing the note title inside two square brackets "[[]]" which includes autocomplete/search to all notes page titles.
         - One Important thing here is if the note page doesn't exist a new page gets create. This would seem weird when coming from other applications. But it serves a big purpose you will see next. 
     - ## Bi-directional Linking
-        - <iframe width="560" height="315" src="https://www.youtube.com/watch?v=v9s3pusI1JQ&list=PLirPuSjy7wZAbEY6nLcyQC6HZXRDt_qEL&index=2" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        - <iframe width="854" height="480" src="https://www.youtube.com/embed/v9s3pusI1JQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         - This is the key feature of Roam. When a page is linked to, when you visit the page you can see all the places where it has been referred.
         - Examples:
             - Say you write " I was reading this cool article on [[Deep Learning]]"
@@ -68,10 +68,10 @@ permalink: /roam-research-software-for-building-a-second-brain
         - So every page becomes akin to a tag, but associations between them form a dynamic/organic hierarchy. 
             - "^^Every page is a tag, and every tag is a page"^^
     - ## Un-linked References
-        - <iframe width="560" height="315" src="https://www.youtube.com/watch?v=nROryUttSr0&list=PLirPuSjy7wZAbEY6nLcyQC6HZXRDt_qEL&index=4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        - <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/nROryUttSr0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         - If you have already mentioned a topic in lots of notes, but didn't create a page for it and link them. Roam has got your back with its super cool un-linked references. When you create a new page, you can easily bulk link every other page that has mentions of the current page.
     - ## Ability to refer or embed any block/bullet anywhere
-        - <iframe width="560" height="315" src="https://youtu.be/ZFbrdv-70ME" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        - <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ZFbrdv-70ME" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         - You can link to or embed any block written anywhere in roam notes.
         - Roam prompts a search/autocomplete to any block you have written in all the pages. How awesome is that?
         - To create a block reference two open Parentheses `((` Or type `/Block Reference.`
@@ -79,25 +79,25 @@ permalink: /roam-research-software-for-building-a-second-brain
             - Type `/Block Embed`
         - When embedding or linking to a block you can see the  places it has been used by clicking on the number which appears at top right side of a block.
     - ## All  back-links and block embeds are editable
-        - <iframe width="560" height="315" src="https://www.youtube.com/watch?v=qg9uS6LlCf0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        - <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/qg9uS6LlCf0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         - The coolest part of roam is all blocks (bullets) displayed by back-links and block embeds are editable. 
             - Same case for {{embed: ((GI1gRnEN4))}}
         - You can edit embedded notes and back-links with no duplication.
         - So you easily remix (refactor?) notes by creating a new note with just embeds from multiple other notes in other places.
     - ## Navigating with Full-text Search
-        - <iframe width="560" height="315" src="https://youtu.be/Al69VbgKVw0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        - <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Al69VbgKVw0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         - Roam provides full text search of all the blocks and titles.
         - You can create a brand new page which is not linked to any other page directly from search.
     - ## Graph View
-        - <iframe width="560" height="315" src="https://youtu.be/OXqN4u7lKac" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        - <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/OXqN4u7lKac" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         - Since every note is basically a node in graph, roam easily allows a bird's eye of your entire graph in the "Graph Overview" page.
         - A more helpful feature is ability to view what nodes current page has connections to and navigate visually.
     - ## Side Bar
-        - <iframe width="560" height="315" src="https://www.youtube.com/watch?v=7dASSNABtIo&list=PLirPuSjy7wZAbEY6nLcyQC6HZXRDt_qEL&index=9" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        - <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/7dASSNABtIo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         - Roam sidebar allows you to open multiple notes at a time.
         - This is really useful when you want to aggregate knowledge across notes.
     - ## Filters on Bi-directional Links
-        - <iframe width="560" height="315" src="https://www.youtube.com/watch?v=BnwWdTnXlxU&list=PLirPuSjy7wZAbEY6nLcyQC6HZXRDt_qEL&index=6&t=0s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        - <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/BnwWdTnXlxU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         - When you have too many bi-directional links in a page, you can filter them to include or exclude other links.
 - # Building a second brain with Roam
     - In this section, I will describe how Roam can be used for multiple use-cases at once thereby building your second brain.
@@ -111,14 +111,14 @@ permalink: /roam-research-software-for-building-a-second-brain
         - It feels really encouraging to journal in roam as unlike other apps because of the back-links.
         - Anything recorded will automatically get associated with all the topics.
     - ## Task management
-        - <iframe width="560" height="315" src="https://www.youtube.com/watch?v=asQ4RSjjCu4&list=PLirPuSjy7wZAbEY6nLcyQC6HZXRDt_qEL&index=6" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        - <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/asQ4RSjjCu4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         - Roam supports basic todos, you can use links to link tasks to the date it has to be done using date-picker. 
         - The key advantage here is your project management tasks can easily be linked to the meeting notes, research notes, and journal etc.
         - Getting things done (GTD) is a popular method to manage tasks.
         - It is very easy to implement that in roam with the aid of back-links.
         - You can read how to adopt GTD in roam [here](https://oliverschmid.space/posts/gtd-in-roam/). 
     - ## Bookmarks
-        - <iframe width="560" height="315" src="https://www.youtube.com/watch?v=7b2AVCZOMnw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        - <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/7b2AVCZOMnw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         - You can easily put links into roam with creating tags/links. 
         - Tags are same as "[[]]" links, just that the font is greyed out.
     - ## Personal CRM
@@ -129,7 +129,7 @@ permalink: /roam-research-software-for-building-a-second-brain
         - So you will never have the feeling of starting at a blank page when you have done your research and taken notes on it.
 - # Other useful features
     - ## Query
-        - <iframe width="560" height="315" src="https://youtu.be/AlmhG6nTl9M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        - <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/AlmhG6nTl9M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         - This is an advanced feature, where you can query on your graph to show blocks that satisfy boolean conditions. Like show me all the blocks with todos with high priority. etc
     - ## Shortcuts
         - ![](https://nimbus-screenshots.s3.amazonaws.com/s/823247391734eda9aec6dd9353f33a2b.png)
