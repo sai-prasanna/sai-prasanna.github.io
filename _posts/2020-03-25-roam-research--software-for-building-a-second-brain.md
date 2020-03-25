@@ -66,7 +66,7 @@ permalink: /roam-research-software-for-building-a-second-brain
             - Say you write "I was reading this cool article on [[Deep Learning]]"
                 - The Deep Learning page will have a back link to all the places it has been mentioned.
         - So every page becomes akin to a tag, but associations between them form a dynamic/organic hierarchy. 
-            - > "Every page is a tag, and every tag is a page" - [Nat Elison's excellent intro to roam](https://www.nateliason.com/blog/roam)
+            - > "Every page is a tag, and every tag is a page" - [Nat Elison's blog on Roam](https://www.nateliason.com/blog/roam)
             - 
     - ## Un-linked References
         - <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/nROryUttSr0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
