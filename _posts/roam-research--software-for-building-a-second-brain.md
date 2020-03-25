@@ -1,0 +1,164 @@
+---
+title: Roam Research - Software for building a Second Brain
+tags: Productivity, Note Taking
+permalink: /about/2020-03-25-roam-research-software-for-building-a-second-brain
+---
+- # Introduction
+    - ![Roam research visualized](https://roamresearch.com/assets/images/Roam-Group-min.png)
+    - [Roam Research](roamresearch.com) is a revolutionary note-taking/knowledge management software. It is designed with the idea that data structure for a second brain should be associative (graph) rather than a rigid hierarchy.
+    - It is meant for everyone who needs to manage their knowledge effectively. Their founder aims for the product to become more or less excel for knowledge management.
+    -  [[Professor Balaji Srinivas]] introduced it to me. I have been using this for about a month and fell in love with its features. 
+    - Canadian philosopher who predicted the web tells that "Medium is the message". The properties of a medium in which communication occurs can impact society a lot. I believe that roam is one such tool that shifts the medium of note-taking in a groundbreaking manner.
+    - The features of Roam allow you to arrange for the serendipity of ideas, unexpected connections with your past, present and future selves.
+    - It is built on simple building blocks that come together (emergent property) to make the whole greater than the sum of its parts. Each building block of Roam might look simple if looked separately, but together they become very powerful.
+    - Note: It is still in beta with a pricing yet to be announced. But if you try it I think you will share this sentiment. ![](https://scaledynamix.com/wp-content/uploads/2018/08/takemymoney.jpg)
+    - Here is the [Roam white paper](https://roamresearch.com/#/v8/help/page/Vu1MmjinS) written by founders on a Public roam database about why they think Roam is revolutionary.
+- # Painpoints with most of the knowledge-management software
+    - I have used popular note-taking software like evernote, One-note, Zoho notebook etc. There was always huge friction with these tools. Getting them to work for Note taking, journaling, and project management was such a pain.
+    - The only tool that came close was org-mode in Emacs. I used it for the past one year. But even it had a lot of friction due to the reasons I will expand upon below. And emacs is most definitely not for popular use, it is only for the chosen few who are blessed enough to reject the cult of mouse.
+    - ## Failure of Files inside Folders way of organization.
+        - Most note-taking software or even physical note-taking follow a file-folder system or a single hierarchy of bullets inside bullets (Outlining tools) for organizing notes. I will refer to this as "files inside folder" model going forward now.
+        - This system creates nested hierarchy of categories, sub-categories and so on. Inside which your notes are put.
+        - ### **Why this approach fails?**
+            - You might have started taking notes/journaling etc for a few days and abandon it after some time. The following are the main reasons I think this happens.
+            - **Friction caused by a static hierarchy of the folder system**
+                - Every time you want to write a note you have to decide where to put it in the hierarchy. You have to ask yourselves which notebook/folder/file should I write this, for it to be useful?
+            - **Poor Return in investment for good note-taking**
+                - You painstakingly take notes or journal your exercise regime or note down something. But it never surfaces automatically when you write something related.
+                - Most notes are passive and useless unless you look for them.
+                - Most notes are hidden uselessly in the hierarchy where you put it in.
+        - ### Practical Scenario where folder model fails
+            - Say you had a discussion with your friend about note-taking while sipping a coffee in a cafe.
+            - You talk about some personal stuff which say you want to put in your journal.
+            - S/he brings about about a new book which you find interesting and want to read.
+            - Also, you really like the coffee in the cafe and want to note it down in your list of the favourite coffee shops.
+            - **Now how do you take notes in this case?**
+                - In a rigid hierarchy, for this note to be useful you have to file it under multiple places
+                    -  "To read books", "Daily Journal", "Meets", "Friend's name"
+                - But that is highly impractical because of the effort/redundancy involved. You would have to copy paste same information in multiple places or  manually create links in multiple pages. And if those pages don't exist you would have to create them.
+    - ## Simple Tags don't solve this problem
+        - Most note-taking software provide tagging to solve this problem.
+        - But this creates friction of adding tags to everything you write.
+        - And more importantly the tags are flat. i.e. They have no hierarchy between them.
+        - Tags solve searching for notes, but not disovery.  This makes it problematic if you want to discover notes when you stumble through a specific context automatically.
+    - ## We think in a associative (Graphs) manner not as a rigid hierarchy (Trees)
+        - Every thought/idea in our brain has a bunch of associations. 
+        - Associations like people who introduced us to the idea, what we want to do with it, associations with books we read about it, tasks we completed based on it, tasks we want to do, date in which we did it etc.
+        - So this forms a "graph" (in computer science) where every idea is a node and is linked to many other ideas.
+        - When you think of an idea naturally you get reminded of the stuff it is associated with.
+        - But the problem is we forget stuff, which is the reason why we are doing note-taking in the first place. 
+        - **What if  a note-taking software allows you to mirror how the brain works? **
+- # Building blocks of Roam that differentiate it 
+    - These are the fundamental set of features that make Roam what it is. Since showing is better than telling, I am including 1-minute videos of how each fundamental building blocks of Roam work.
+    - ## Basic Layout
+        - <iframe width="560" height="315" src="https://www.youtube.com/watch?v=3SwQ4usbCX4&list=PLirPuSjy7wZAbEY6nLcyQC6HZXRDt_qEL&index=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        - Roam's page layout is like any other "outlining" tool. ie It has bullets which can be nested within each other infinitely and the bullets can be collapsed.
+        - There is no folder system. All notes are be seen from "All Pages" view in left side-bar, but it is rarely needed because of way roam's navigation is organized. 
+        - Roam's home page is the Daily notes page where you can see pages titled by dates. This is the basic dumping ground for all your quick note-taking and journaling, daily tasks, habit tracking for the day.
+    - ## Friction Free Link Creation
+        - <iframe width="560" height="315" src="https://www.youtube.com/watch?v=lHkMq3aqDtw&list=PLirPuSjy7wZAbEY6nLcyQC6HZXRDt_qEL&index=3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        - Basic way roam allows linking between pages is typing the note title inside two square brackets "[[]]" which includes autocomplete/search to all notes page titles.
+        - One Important thing here is if the note page doesn't exist a new page gets create. This would seem weird when coming from other applications. But it serves a big purpose you will see next. 
+    - ## Bi-directional Linking
+        - <iframe width="560" height="315" src="https://www.youtube.com/watch?v=v9s3pusI1JQ&list=PLirPuSjy7wZAbEY6nLcyQC6HZXRDt_qEL&index=2" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        - This is the key feature of Roam. When a page is linked to, when you visit the page you can see all the places where it has been referred.
+        - Examples:
+            - Say you write " I was reading this cool article on [[Deep Learning]]"
+                - The Deep Learning page will have a back link to all the places it has been mentioned.
+        - So every page becomes akin to a tag, but associations between them form a dynamic/organic hierarchy. 
+            - "^^Every page is a tag, and every tag is a page"^^
+    - ## Un-linked References
+        - <iframe width="560" height="315" src="https://www.youtube.com/watch?v=nROryUttSr0&list=PLirPuSjy7wZAbEY6nLcyQC6HZXRDt_qEL&index=4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        - If you have already mentioned a topic in lots of notes, but didn't create a page for it and link them. Roam has got your back with its super cool un-linked references. When you create a new page, you can easily bulk link every other page that has mentions of the current page.
+    - ## Ability to refer or embed any block/bullet anywhere
+        - <iframe width="560" height="315" src="https://youtu.be/ZFbrdv-70ME" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        - You can link to or embed any block written anywhere in roam notes.
+        - Roam prompts a search/autocomplete to any block you have written in all the pages. How awesome is that?
+        - To create a block reference two open Parentheses `((` Or type `/Block Reference.`
+        - You can also embed the entire block using Block embed. 
+            - Type `/Block Embed`
+        - When embedding or linking to a block you can see the  places it has been used by clicking on the number which appears at top right side of a block.
+    - ## All  back-links and block embeds are editable
+        - <iframe width="560" height="315" src="https://www.youtube.com/watch?v=qg9uS6LlCf0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        - The coolest part of roam is all blocks (bullets) displayed by back-links and block embeds are editable. 
+            - Same case for {{embed: ((GI1gRnEN4))}}
+        - You can edit embedded notes and back-links with no duplication.
+        - So you easily remix (refactor?) notes by creating a new note with just embeds from multiple other notes in other places.
+    - ## Navigating with Full-text Search
+        - <iframe width="560" height="315" src="https://youtu.be/Al69VbgKVw0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        - Roam provides full text search of all the blocks and titles.
+        - You can create a brand new page which is not linked to any other page directly from search.
+    - ## Graph View
+        - <iframe width="560" height="315" src="https://youtu.be/OXqN4u7lKac" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        - Since every note is basically a node in graph, roam easily allows a bird's eye of your entire graph in the "Graph Overview" page.
+        - A more helpful feature is ability to view what nodes current page has connections to and navigate visually.
+    - ## Side Bar
+        - <iframe width="560" height="315" src="https://www.youtube.com/watch?v=7dASSNABtIo&list=PLirPuSjy7wZAbEY6nLcyQC6HZXRDt_qEL&index=9" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        - Roam sidebar allows you to open multiple notes at a time.
+        - This is really useful when you want to aggregate knowledge across notes.
+    - ## Filters on Bi-directional Links
+        - <iframe width="560" height="315" src="https://www.youtube.com/watch?v=BnwWdTnXlxU&list=PLirPuSjy7wZAbEY6nLcyQC6HZXRDt_qEL&index=6&t=0s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        - When you have too many bi-directional links in a page, you can filter them to include or exclude other links.
+- # Building a second brain with Roam
+    - In this section, I will describe how Roam can be used for multiple use-cases at once thereby building your second brain.
+    - ## Note taking
+        - If you read a lot and want to retain the knowledge. Reading stuff and writing it in your own words will be a good way to test gaps in understanding.
+        - This [article](https://www.nateliason.com/blog/smart-notes) a effective way to take smart notes using roam.
+        - I found [this summary](https://fortelabs.co/blog/how-to-take-smart-notes) of a book called "[[How to Take Smart Notes: One Simple Technique to Boost Writing, Learning and Thinking – for Students, Academics and Nonfiction Book Writers]] really helpful.
+    - ## Journal
+        - Writing a journal is a bread and (peanut) butter of roam.
+        - Daily notes encourages you to write daily at anytime.
+        - It feels really encouraging to journal in roam as unlike other apps because of the back-links.
+        - Anything recorded will automatically get associated with all the topics.
+    - ## Task management
+        - <iframe width="560" height="315" src="https://www.youtube.com/watch?v=asQ4RSjjCu4&list=PLirPuSjy7wZAbEY6nLcyQC6HZXRDt_qEL&index=6" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        - Roam supports basic todos, you can use links to link tasks to the date it has to be done using date-picker. 
+        - The key advantage here is your project management tasks can easily be linked to the meeting notes, research notes, and journal etc.
+        - Getting things done (GTD) is a popular method to manage tasks.
+        - It is very easy to implement that in roam with the aid of back-links.
+        - You can read how to adopt GTD in roam [here](https://oliverschmid.space/posts/gtd-in-roam/). 
+    - ## Bookmarks
+        - <iframe width="560" height="315" src="https://www.youtube.com/watch?v=7b2AVCZOMnw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        - You can easily put links into roam with creating tags/links. 
+        - Tags are same as "[[]]" links, just that the font is greyed out.
+    - ## Personal CRM
+        - Personal crm is for maintaining a list of people, their contact, birthdays, how you met them or anything else you want to maintain about them.
+        - In roam you can easily create pages for people, and refer it in your daily notes. So when you go to the person's page, you can see all the places h/she has been mentioned.
+    - ## Content Creation
+        - For writing new content, you can easily remix stuff which you wrote across different pages in a new page.
+        - So you will never have the feeling of starting at a blank page when you have done your research and taken notes on it.
+- # Other useful features
+    - ## Query
+        - <iframe width="560" height="315" src="https://youtu.be/AlmhG6nTl9M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        - This is an advanced feature, where you can query on your graph to show blocks that satisfy boolean conditions. Like show me all the blocks with todos with high priority. etc
+    - ## Shortcuts
+        - ![](https://nimbus-screenshots.s3.amazonaws.com/s/823247391734eda9aec6dd9353f33a2b.png)
+        - This is useful to keep the most important projects 
+    - ## Tables, Diagrams, Kanban boards
+        - Tables can be created using `/Table` command followed by nested bullets.
+        - ![](https://nimbus-screenshots.s3.amazonaws.com/s/e3e5189d83b0ab1d85e5debe2d0d7207.png)
+    - ## Embedding Media
+        - Embed tweet by just pasting a twitter link. 
+        - Type backslash followed by image markdown  to insert a markdown for image embed. `/Image Markdown`
+            -  Alternatively images can be uploaded by pasting directly or with backslash command `/Upload a image` backslash command for it to be uploaded and the markdown inserted automatically.
+        - For youtube videos, use `/Embed Youtube Video` command.
+        - Interesting point here is all the embeds are markdown or markdown like plain text syntax. No proprietary garbage.
+    - ## Publishing your Roam Notes
+        - You can share a note by its URL to public as read-only or even allow public edits. 
+    - ## Sharing your second Brain to form a Hive mind
+        - Currently you can share the entire roam database and collabrate with peers.
+        - More fine-grained controls of sharing parts of the graph are in the works.
+    - ## Works offline (Progressive Web App)
+        - The mobile apps are coming shortly, but the web app is designed so well that it can function offline.
+    - ## Exports to plain text
+        - This is important for anyone who cares about not getting locked out of your data.
+        - Since the product is in development better to take regular backups if you plan to use it.
+- # Final thoughts
+    - The concept of bi-directional editable media in Roam can 
+be transposed to many other products with lots of unstructured text 
+trapped in a rigid hierarchy.
+    - Roam is a well-designed innovative product that leapfrogs over existing products. This I think is because of unorthodox thinking of its founders ([Conor White-Sulivan](https://twitter.com/Conaw) and Joshua Brown) to build useful tools for augmenting our brain.
+    - Turing award winner and Computer Science legend Alan Kay once said: "The best way to predict the future is to invent it.". He also thought that there is a lot more that can be done to make computers truly augmenting the intellect. I think these founders are trying to fulfill that dream.
+    - Roam seems like an application that can give compounding returns of value for the knowledge put in it. This is totally refreshing in an age where 
+apps suck your attention.
+    - Finally, I am more into engineering than content writing for productivity software. This software was so good that I couldn't help writing this article to share it with others.
