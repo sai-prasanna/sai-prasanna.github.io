@@ -1,7 +1,7 @@
 ---
 title: Roam Research - Software for building a Second Brain
 tags: Productivity, Note Taking
-permalink: /about/2020-03-25-roam-research-software-for-building-a-second-brain
+permalink: /roam-research-software-for-building-a-second-brain
 ---
 - # Introduction
     - ![Roam research visualized](https://roamresearch.com/assets/images/Roam-Group-min.png)
