@@ -7,7 +7,7 @@ permalink: /roam-research-software-for-building-a-second-brain
     - ![](https://roamresearch.com/assets/images/Roam-Group-min.png)
     - [Roam Research](roamresearch.com) is a revolutionary note-taking/knowledge management software. It is designed with the idea that data structure for a second brain should be associative (graph) rather than a rigid hierarchy.
     - It is meant for everyone who needs to manage their knowledge effectively. Their founder aims for the product to become more or less excel for knowledge management.
-    -  [[Professor Balaji Srinivas]] introduced it to me. I have been using this for about a month and fell in love with its features. 
+    -  Professor Balaji Srinivas introduced it to me. I have been using this for about a month and fell in love with its features. 
     - Canadian philosopher who predicted the web tells that "Medium is the message". The properties of a medium in which communication occurs can impact society a lot. I believe that roam is one such tool that shifts the medium of note-taking in a groundbreaking manner.
     - The features of Roam allow you to arrange for the serendipity of ideas, unexpected connections with your past, present and future selves.
     - It is built on simple building blocks that come together (emergent property) to make the whole greater than the sum of its parts. Each building block of Roam might look simple if looked separately, but together they become very powerful.
@@ -63,10 +63,11 @@ permalink: /roam-research-software-for-building-a-second-brain
         - <iframe width="854" height="480" src="https://www.youtube.com/embed/v9s3pusI1JQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         - This is the key feature of Roam. When a page is linked to, when you visit the page you can see all the places where it has been referred.
         - Examples:
-            - Say you write " I was reading this cool article on [[Deep Learning]]"
+            - Say you write "I was reading this cool article on [[Deep Learning]]"
                 - The Deep Learning page will have a back link to all the places it has been mentioned.
         - So every page becomes akin to a tag, but associations between them form a dynamic/organic hierarchy. 
-            - "^^Every page is a tag, and every tag is a page"^^
+            - > "Every page is a tag, and every tag is a page" - [Nat Elison's excellent intro to roam](https://www.nateliason.com/blog/roam)
+            - 
     - ## Un-linked References
         - <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/nROryUttSr0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         - If you have already mentioned a topic in lots of notes, but didn't create a page for it and link them. Roam has got your back with its super cool un-linked references. When you create a new page, you can easily bulk link every other page that has mentions of the current page.
@@ -81,7 +82,6 @@ permalink: /roam-research-software-for-building-a-second-brain
     - ## All  back-links and block embeds are editable
         - <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/qg9uS6LlCf0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         - The coolest part of roam is all blocks (bullets) displayed by back-links and block embeds are editable. 
-            - Same case for {{embed: ((GI1gRnEN4))}}
         - You can edit embedded notes and back-links with no duplication.
         - So you easily remix (refactor?) notes by creating a new note with just embeds from multiple other notes in other places.
     - ## Navigating with Full-text Search
@@ -161,4 +161,4 @@ trapped in a rigid hierarchy.
     - Turing award winner and Computer Science legend Alan Kay once said: "The best way to predict the future is to invent it.". He also thought that there is a lot more that can be done to make computers truly augmenting the intellect. I think these founders are trying to fulfill that dream.
     - Roam seems like an application that can give compounding returns of value for the knowledge put in it. This is totally refreshing in an age where 
 apps suck your attention.
-    - Finally, I am more into engineering than content writing for productivity software. This software was so good that I couldn't help writing this article to share it with others.
+    - Finally, I am more into engineering than content writing for productivity software. This software was so good that I couldn't help writing this article for sharing it.
