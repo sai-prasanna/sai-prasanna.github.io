@@ -3,7 +3,7 @@ title: Roam Research - Software for building a Second Brain
 tags: [Productivity, Note Taking]
 permalink: /roam-research-software-for-building-a-second-brain
 ---
-<iframe src="https://roamresearch.com/#/app/artificial_sai/page/B6mW540jC"></iframe>
+<iframe src="https://roamresearch.com/#/app/artificial_sai/page/B6mW540jC" width="100%" height="100%"></iframe>
 - # Introduction
     - ![](https://roamresearch.com/assets/images/Roam-Group-min.png)
     - [Roam Research](roamresearch.com) is a revolutionary note-taking/knowledge management software. It is designed with the idea that data structure for a second brain should be associative (graph) rather than a rigid hierarchy.
